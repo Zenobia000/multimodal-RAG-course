@@ -1,0 +1,15 @@
+{
+  "output_name": "IF_2024_MegaScale_20251124",
+  "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/02_infrastructure/2024_MegaScale.pdf",
+  "category_code": "IF",
+  "processing_time": "2025-11-24T18:06:47.405602",
+  "paper_info": {
+    "year": "2024",
+    "name": "MegaScale",
+    "original_filename": "2024_MegaScale"
+  },
+  "output_locations": {
+    "processed_paper_dir": "outputs/processed_papers/IF/IF_2024_MegaScale_20251124",
+    "aggregated_chunk_path": "outputs/aggregated_chunks/IF_2024_MegaScale_20251124.jsonl"
+  }
+}

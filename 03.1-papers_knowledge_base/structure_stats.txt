@@ -1,0 +1,32 @@
+目錄結構統計
+==============================
+基礎目錄: /home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base
+分類數量: 4
+創建時間: 2025-11-24 17:10:51
+
+分類詳細:
+  01_MP_Model_Paradigm:
+    代碼: MP
+    中文: 模型範式
+    源目錄: 01_model_paradigm
+    子目錄數: 5
+
+  02_IF_Infrastructure:
+    代碼: IF
+    中文: 基礎設施
+    源目錄: 02_infrastructure
+    子目錄數: 5
+
+  03_LM_Language_Models:
+    代碼: LM
+    中文: 語言模型
+    源目錄: 03_language_models
+    子目錄數: 5
+
+  04_MM_Multimodal:
+    代碼: MM
+    中文: 多模態
+    源目錄: 04_multimodal
+    子目錄數: 5
+
+總目錄數: 23

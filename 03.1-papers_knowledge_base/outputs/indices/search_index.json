@@ -1,0 +1,140 @@
+{
+  "papers_by_year": {
+    "2024": [
+      {
+        "id": "cf9ded6ba783",
+        "name": "MegaScale",
+        "category": "IF",
+        "output_name": "IF_2024_MegaScale_20251124"
+      }
+    ],
+    "2019": [
+      {
+        "id": "a23f782ae69e",
+        "name": "ZeRO",
+        "category": "IF",
+        "output_name": "IF_2019_ZeRO_20251124"
+      }
+    ],
+    "2020": [
+      {
+        "id": "a29711660107",
+        "name": "Scaling_Laws",
+        "category": "IF",
+        "output_name": "IF_2020_Scaling_Laws_20251124"
+      }
+    ],
+    "2022": [
+      {
+        "id": "e236849b5c85",
+        "name": "LAION_5B",
+        "category": "IF",
+        "output_name": "IF_2022_LAION_5B_20251124"
+      }
+    ],
+    "2023": [
+      {
+        "id": "b526e09a2334",
+        "name": "RefinedWeb",
+        "category": "IF",
+        "output_name": "IF_2023_RefinedWeb_20251124"
+      }
+    ]
+  },
+  "papers_by_keyword": {
+    "megascale": [
+      {
+        "id": "cf9ded6ba783",
+        "name": "MegaScale",
+        "category": "IF"
+      }
+    ],
+    "zero": [
+      {
+        "id": "a23f782ae69e",
+        "name": "ZeRO",
+        "category": "IF"
+      }
+    ],
+    "scaling": [
+      {
+        "id": "a29711660107",
+        "name": "Scaling_Laws",
+        "category": "IF"
+      }
+    ],
+    "laws": [
+      {
+        "id": "a29711660107",
+        "name": "Scaling_Laws",
+        "category": "IF"
+      }
+    ],
+    "laion": [
+      {
+        "id": "e236849b5c85",
+        "name": "LAION_5B",
+        "category": "IF"
+      }
+    ],
+    "refinedweb": [
+      {
+        "id": "b526e09a2334",
+        "name": "RefinedWeb",
+        "category": "IF"
+      }
+    ]
+  },
+  "all_papers": [
+    {
+      "id": "cf9ded6ba783",
+      "name": "MegaScale",
+      "year": "2024",
+      "category_code": "IF",
+      "category_name": "基礎設施",
+      "output_name": "IF_2024_MegaScale_20251124",
+      "has_content": true,
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "a23f782ae69e",
+      "name": "ZeRO",
+      "year": "2019",
+      "category_code": "IF",
+      "category_name": "基礎設施",
+      "output_name": "IF_2019_ZeRO_20251124",
+      "has_content": true,
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "a29711660107",
+      "name": "Scaling_Laws",
+      "year": "2020",
+      "category_code": "IF",
+      "category_name": "基礎設施",
+      "output_name": "IF_2020_Scaling_Laws_20251124",
+      "has_content": true,
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "e236849b5c85",
+      "name": "LAION_5B",
+      "year": "2022",
+      "category_code": "IF",
+      "category_name": "基礎設施",
+      "output_name": "IF_2022_LAION_5B_20251124",
+      "has_content": true,
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "b526e09a2334",
+      "name": "RefinedWeb",
+      "year": "2023",
+      "category_code": "IF",
+      "category_name": "基礎設施",
+      "output_name": "IF_2023_RefinedWeb_20251124",
+      "has_content": true,
+      "has_aggregated_chunk": true
+    }
+  ]
+}

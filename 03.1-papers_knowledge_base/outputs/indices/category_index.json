@@ -1,0 +1,55 @@
+{
+  "IF": {
+    "name": "基礎設施",
+    "name_en": "Infrastructure",
+    "paper_count": 5,
+    "total_size": 1057157,
+    "papers": [
+      {
+        "id": "cf9ded6ba783",
+        "output_name": "IF_2024_MegaScale_20251124",
+        "year": "2024",
+        "name": "MegaScale",
+        "has_content": true,
+        "estimated_pages": 38,
+        "has_aggregated_chunk": true
+      },
+      {
+        "id": "a23f782ae69e",
+        "output_name": "IF_2019_ZeRO_20251124",
+        "year": "2019",
+        "name": "ZeRO",
+        "has_content": true,
+        "estimated_pages": 36,
+        "has_aggregated_chunk": true
+      },
+      {
+        "id": "a29711660107",
+        "output_name": "IF_2020_Scaling_Laws_20251124",
+        "year": "2020",
+        "name": "Scaling_Laws",
+        "has_content": true,
+        "estimated_pages": 47,
+        "has_aggregated_chunk": true
+      },
+      {
+        "id": "e236849b5c85",
+        "output_name": "IF_2022_LAION_5B_20251124",
+        "year": "2022",
+        "name": "LAION_5B",
+        "has_content": true,
+        "estimated_pages": 66,
+        "has_aggregated_chunk": true
+      },
+      {
+        "id": "b526e09a2334",
+        "output_name": "IF_2023_RefinedWeb_20251124",
+        "year": "2023",
+        "name": "RefinedWeb",
+        "has_content": true,
+        "estimated_pages": 63,
+        "has_aggregated_chunk": true
+      }
+    ]
+  }
+}

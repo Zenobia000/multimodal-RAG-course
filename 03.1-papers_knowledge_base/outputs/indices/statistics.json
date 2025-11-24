@@ -1,0 +1,52 @@
+{
+  "total_papers": 5,
+  "by_category": {
+    "IF": {
+      "count": 5,
+      "size": 1057157,
+      "name": "基礎設施",
+      "name_en": "Infrastructure"
+    }
+  },
+  "by_year": {
+    "2024": 1,
+    "2019": 1,
+    "2020": 1,
+    "2022": 1,
+    "2023": 1
+  },
+  "total_size": 1057157,
+  "aggregated_chunks": {
+    "total_files": 5,
+    "total_size": 528172,
+    "files": [
+      {
+        "filename": "IF_2020_Scaling_Laws_20251124.jsonl",
+        "size": 99738,
+        "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/aggregated_chunks/IF_2020_Scaling_Laws_20251124.jsonl"
+      },
+      {
+        "filename": "IF_2023_RefinedWeb_20251124.jsonl",
+        "size": 131817,
+        "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/aggregated_chunks/IF_2023_RefinedWeb_20251124.jsonl"
+      },
+      {
+        "filename": "IF_2022_LAION_5B_20251124.jsonl",
+        "size": 139227,
+        "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/aggregated_chunks/IF_2022_LAION_5B_20251124.jsonl"
+      },
+      {
+        "filename": "IF_2019_ZeRO_20251124.jsonl",
+        "size": 77156,
+        "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/aggregated_chunks/IF_2019_ZeRO_20251124.jsonl"
+      },
+      {
+        "filename": "IF_2024_MegaScale_20251124.jsonl",
+        "size": 80234,
+        "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/aggregated_chunks/IF_2024_MegaScale_20251124.jsonl"
+      }
+    ]
+  },
+  "generation_time": "2025-11-24T18:08:13.894965",
+  "architecture_version": "2.0"
+}

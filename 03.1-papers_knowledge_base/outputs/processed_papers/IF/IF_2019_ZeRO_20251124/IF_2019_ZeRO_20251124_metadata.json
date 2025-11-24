@@ -1,0 +1,15 @@
+{
+  "output_name": "IF_2019_ZeRO_20251124",
+  "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/02_infrastructure/2019_ZeRO.pdf",
+  "category_code": "IF",
+  "processing_time": "2025-11-24T17:57:00.232725",
+  "paper_info": {
+    "year": "2019",
+    "name": "ZeRO",
+    "original_filename": "2019_ZeRO"
+  },
+  "output_locations": {
+    "processed_paper_dir": "outputs/processed_papers/IF/IF_2019_ZeRO_20251124",
+    "aggregated_chunk_path": "outputs/aggregated_chunks/IF_2019_ZeRO_20251124.jsonl"
+  }
+}

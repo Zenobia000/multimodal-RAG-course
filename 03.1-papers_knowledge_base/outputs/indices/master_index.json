@@ -1,0 +1,288 @@
+{
+  "metadata": {
+    "total_papers": 5,
+    "categories": [
+      "IF"
+    ],
+    "generation_time": "2025-11-24T18:08:13.894975",
+    "base_directory": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base",
+    "architecture_version": "2.0",
+    "outputs_structure": {
+      "processed_papers": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers",
+      "aggregated_chunks": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/aggregated_chunks",
+      "indices": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/indices"
+    }
+  },
+  "papers": [
+    {
+      "id": "cf9ded6ba783",
+      "output_name": "IF_2024_MegaScale_20251124",
+      "category_code": "IF",
+      "category_name": "基礎設施",
+      "category_name_en": "Infrastructure",
+      "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/IF/IF_2024_MegaScale_20251124",
+      "has_metadata": true,
+      "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/02_infrastructure/2024_MegaScale.pdf",
+      "processing_time": "2025-11-24T18:06:47.405602",
+      "paper_info": {
+        "year": "2024",
+        "name": "MegaScale",
+        "original_filename": "2024_MegaScale"
+      },
+      "output_locations": {
+        "processed_paper_dir": "outputs/processed_papers/IF/IF_2024_MegaScale_20251124",
+        "aggregated_chunk_path": "outputs/aggregated_chunks/IF_2024_MegaScale_20251124.jsonl"
+      },
+      "files": {
+        "jsonl_files": [
+          {
+            "filename": "IF_2024_MegaScale_20251124.jsonl",
+            "size": 80234,
+            "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/IF/IF_2024_MegaScale_20251124/IF_2024_MegaScale_20251124.jsonl"
+          }
+        ],
+        "workspace_files": [
+          {
+            "filename": "work_index_list.csv.zstd",
+            "relative_path": "work_index_list.csv.zstd",
+            "size": 154
+          },
+          {
+            "filename": "done_6b574ff78f050931c0db64a7132c39e1f23b371c.flag",
+            "relative_path": "done_flags/done_6b574ff78f050931c0db64a7132c39e1f23b371c.flag",
+            "size": 0
+          },
+          {
+            "filename": "output_6b574ff78f050931c0db64a7132c39e1f23b371c.jsonl",
+            "relative_path": "results/output_6b574ff78f050931c0db64a7132c39e1f23b371c.jsonl",
+            "size": 80234
+          }
+        ],
+        "total_size": 160622
+      },
+      "content_summary": {
+        "has_content": true,
+        "estimated_pages": 38,
+        "content_preview": "MegaScale: Scaling Large Language Model Training to More Than 10,000 GPUs\n\nZiheng Jiang¹,*  Haibin Lin¹,*  Yinmin Zhong²,*  Qi Huang¹  Yangrui Chen¹  Zhi Zhang¹\nYanghua Peng¹  Xiang Li¹  Cong Xie¹  Shibiao Nong¹  Yulu Jia¹  Sun He¹  Hongmin Chen¹\nZhihao Bai¹  Qi Hou¹  Shipeng Yan¹  Ding Zhou¹  Yiyao..."
+      },
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "a23f782ae69e",
+      "output_name": "IF_2019_ZeRO_20251124",
+      "category_code": "IF",
+      "category_name": "基礎設施",
+      "category_name_en": "Infrastructure",
+      "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/IF/IF_2019_ZeRO_20251124",
+      "has_metadata": true,
+      "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/02_infrastructure/2019_ZeRO.pdf",
+      "processing_time": "2025-11-24T17:57:00.232725",
+      "paper_info": {
+        "year": "2019",
+        "name": "ZeRO",
+        "original_filename": "2019_ZeRO"
+      },
+      "output_locations": {
+        "processed_paper_dir": "outputs/processed_papers/IF/IF_2019_ZeRO_20251124",
+        "aggregated_chunk_path": "outputs/aggregated_chunks/IF_2019_ZeRO_20251124.jsonl"
+      },
+      "files": {
+        "jsonl_files": [
+          {
+            "filename": "IF_2019_ZeRO_20251124.jsonl",
+            "size": 77156,
+            "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/IF/IF_2019_ZeRO_20251124/IF_2019_ZeRO_20251124.jsonl"
+          }
+        ],
+        "workspace_files": [
+          {
+            "filename": "work_index_list.csv.zstd",
+            "relative_path": "work_index_list.csv.zstd",
+            "size": 151
+          },
+          {
+            "filename": "done_551a84476c3a842d7af7374593a09025b9a464bd.flag",
+            "relative_path": "done_flags/done_551a84476c3a842d7af7374593a09025b9a464bd.flag",
+            "size": 0
+          },
+          {
+            "filename": "output_551a84476c3a842d7af7374593a09025b9a464bd.jsonl",
+            "relative_path": "results/output_551a84476c3a842d7af7374593a09025b9a464bd.jsonl",
+            "size": 77156
+          }
+        ],
+        "total_size": 154463
+      },
+      "content_summary": {
+        "has_content": true,
+        "estimated_pages": 36,
+        "content_preview": "ZeRO: Memory Optimizations Toward Training Trillion Parameter Models\n\nSamyam Rajbhandari*, Jeff Rasley*, Olatunji Ruwase, Yuxiong He\n{samyamr, jerasley, olruwase, yuxhe}@microsoft.com\n\nAbstract\n\nLarge deep learning models offer significant accuracy gains, but training billions to trillions of parame..."
+      },
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "a29711660107",
+      "output_name": "IF_2020_Scaling_Laws_20251124",
+      "category_code": "IF",
+      "category_name": "基礎設施",
+      "category_name_en": "Infrastructure",
+      "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/IF/IF_2020_Scaling_Laws_20251124",
+      "has_metadata": true,
+      "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/02_infrastructure/2020_Scaling_Laws.pdf",
+      "processing_time": "2025-11-24T17:44:28.631609",
+      "paper_info": {
+        "year": "2020",
+        "name": "Scaling_Laws",
+        "original_filename": "2020_Scaling_Laws"
+      },
+      "output_locations": {
+        "processed_paper_dir": "outputs/processed_papers/IF/IF_2020_Scaling_Laws_20251124",
+        "aggregated_chunk_path": "outputs/aggregated_chunks/IF_2020_Scaling_Laws_20251124.jsonl"
+      },
+      "files": {
+        "jsonl_files": [
+          {
+            "filename": "IF_2020_Scaling_Laws_20251124.jsonl",
+            "size": 99738,
+            "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/IF/IF_2020_Scaling_Laws_20251124/IF_2020_Scaling_Laws_20251124.jsonl"
+          }
+        ],
+        "workspace_files": [
+          {
+            "filename": "work_index_list.csv.zstd",
+            "relative_path": "work_index_list.csv.zstd",
+            "size": 155
+          },
+          {
+            "filename": "done_6c4c733bcd425e89437c8586565a490a99f59733.flag",
+            "relative_path": "done_flags/done_6c4c733bcd425e89437c8586565a490a99f59733.flag",
+            "size": 0
+          },
+          {
+            "filename": "output_6c4c733bcd425e89437c8586565a490a99f59733.jsonl",
+            "relative_path": "results/output_6c4c733bcd425e89437c8586565a490a99f59733.jsonl",
+            "size": 99738
+          }
+        ],
+        "total_size": 199631
+      },
+      "content_summary": {
+        "has_content": true,
+        "estimated_pages": 47,
+        "content_preview": "Scaling Laws for Neural Language Models\n\nJared Kaplan *\nJohns Hopkins University, OpenAI\njaredk@jhu.edu\n\nSam McCandlish*\nOpenAI\nsam@openai.com\n\nTom Henighan\nOpenAI\nhenighan@openai.com\n\nTom B. Brown\nOpenAI\ntom@openai.com\n\nBenjamin Chess\nOpenAI\nbchess@openai.com\n\nRewon Child\nOpenAI\nrewon@openai.com\n\nS..."
+      },
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "e236849b5c85",
+      "output_name": "IF_2022_LAION_5B_20251124",
+      "category_code": "IF",
+      "category_name": "基礎設施",
+      "category_name_en": "Infrastructure",
+      "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/IF/IF_2022_LAION_5B_20251124",
+      "has_metadata": true,
+      "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/02_infrastructure/2022_LAION_5B.pdf",
+      "processing_time": "2025-11-24T17:27:23.099748",
+      "paper_info": {
+        "year": "2022",
+        "name": "LAION_5B",
+        "original_filename": "2022_LAION_5B"
+      },
+      "output_locations": {
+        "processed_paper_dir": "outputs/processed_papers/IF/IF_2022_LAION_5B_20251124",
+        "aggregated_chunk_path": "outputs/aggregated_chunks/IF_2022_LAION_5B_20251124.jsonl"
+      },
+      "files": {
+        "jsonl_files": [
+          {
+            "filename": "IF_2022_LAION_5B_20251124.jsonl",
+            "size": 139227,
+            "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/IF/IF_2022_LAION_5B_20251124/IF_2022_LAION_5B_20251124.jsonl"
+          }
+        ],
+        "workspace_files": [
+          {
+            "filename": "work_index_list.csv.zstd",
+            "relative_path": "work_index_list.csv.zstd",
+            "size": 199
+          },
+          {
+            "filename": "done_dfeca941055b397c8f5e468d17ffd5b5b0b48968.flag",
+            "relative_path": "done_flags/done_dfeca941055b397c8f5e468d17ffd5b5b0b48968.flag",
+            "size": 0
+          },
+          {
+            "filename": "worker_17d406c916fa4fa7bc0a365e1bb95670a9f4e863.lock",
+            "relative_path": "worker_locks/worker_17d406c916fa4fa7bc0a365e1bb95670a9f4e863.lock",
+            "size": 0
+          },
+          {
+            "filename": "output_dfeca941055b397c8f5e468d17ffd5b5b0b48968.jsonl",
+            "relative_path": "results/output_dfeca941055b397c8f5e468d17ffd5b5b0b48968.jsonl",
+            "size": 139227
+          }
+        ],
+        "total_size": 278653
+      },
+      "content_summary": {
+        "has_content": true,
+        "estimated_pages": 66,
+        "content_preview": "LAION-5B: An open large-scale dataset for training next generation image-text models\n\nChristoph Schuhmann¹ §§°°  Romain Beaumont¹ §§°°  Richard Vencu¹,3,8 §§°°\nCade Gordon² §§°°  Ross Wightman¹§§  Mehdi Cherti 1,10§§\nTheo Coombes¹  Aarush Katta¹  Clayton Mullis¹  Mitchell Wortsman⁶\nPatrick Schramows..."
+      },
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "b526e09a2334",
+      "output_name": "IF_2023_RefinedWeb_20251124",
+      "category_code": "IF",
+      "category_name": "基礎設施",
+      "category_name_en": "Infrastructure",
+      "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/IF/IF_2023_RefinedWeb_20251124",
+      "has_metadata": true,
+      "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/02_infrastructure/2023_RefinedWeb.pdf",
+      "processing_time": "2025-11-24T17:39:45.189973",
+      "paper_info": {
+        "year": "2023",
+        "name": "RefinedWeb",
+        "original_filename": "2023_RefinedWeb"
+      },
+      "output_locations": {
+        "processed_paper_dir": "outputs/processed_papers/IF/IF_2023_RefinedWeb_20251124",
+        "aggregated_chunk_path": "outputs/aggregated_chunks/IF_2023_RefinedWeb_20251124.jsonl"
+      },
+      "files": {
+        "jsonl_files": [
+          {
+            "filename": "IF_2023_RefinedWeb_20251124.jsonl",
+            "size": 131817,
+            "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/IF/IF_2023_RefinedWeb_20251124/IF_2023_RefinedWeb_20251124.jsonl"
+          }
+        ],
+        "workspace_files": [
+          {
+            "filename": "work_index_list.csv.zstd",
+            "relative_path": "work_index_list.csv.zstd",
+            "size": 154
+          },
+          {
+            "filename": "done_17d406c916fa4fa7bc0a365e1bb95670a9f4e863.flag",
+            "relative_path": "done_flags/done_17d406c916fa4fa7bc0a365e1bb95670a9f4e863.flag",
+            "size": 0
+          },
+          {
+            "filename": "output_17d406c916fa4fa7bc0a365e1bb95670a9f4e863.jsonl",
+            "relative_path": "results/output_17d406c916fa4fa7bc0a365e1bb95670a9f4e863.jsonl",
+            "size": 131817
+          }
+        ],
+        "total_size": 263788
+      },
+      "content_summary": {
+        "has_content": true,
+        "estimated_pages": 63,
+        "content_preview": "The RefinedWeb Dataset for Falcon LLM:\nOutperforming Curated Corpora with Web Data, and Web Data Only\n\nThe Falcon LLM team\nGuilherme Penedo¹ Quentin Malartic²\nDaniel Hesslow¹ Ruxandra Cojocaru² Alessandro Cappelli¹ Hamza Alobeidli² Baptiste Pannier¹\nEbtesam Almazrouei² Julien Launay¹³\n\nhttps://huggi..."
+      },
+      "has_aggregated_chunk": true
+    }
+  ]
+}

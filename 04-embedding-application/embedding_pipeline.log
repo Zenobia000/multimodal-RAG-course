@@ -1,0 +1,8 @@
+2025-11-24 13:54:17,800 - httpx - INFO - HTTP Request: GET http://localhost:6333 "HTTP/1.1 200 OK"
+2025-11-24 13:54:17,943 - httpx - INFO - HTTP Request: GET http://localhost:6333 "HTTP/1.1 200 OK"
+2025-11-24 13:54:17,948 - embedding_pipeline - INFO - 找到 3 個 OLMoCR 結果文件
+2025-11-24 13:54:17,953 - embedding_pipeline - INFO - 從 output_cea6ab3e6cdb943323be54d06b1310c135654e7d.jsonl 載入了 1 筆記錄
+2025-11-24 13:54:17,958 - embedding_pipeline - INFO - 從 output_3e580b06d60df31d0f008cd6ab7c43e0a1b1dae9.jsonl 載入了 1 筆記錄
+2025-11-24 13:54:17,961 - embedding_pipeline - INFO - 從 output_b185ba333cbc50284a1fabf2333ae586c274f054.jsonl 載入了 1 筆記錄
+2025-11-24 13:54:17,961 - embedding_pipeline - INFO - 總共載入 3 筆 OLMoCR 記錄
+2025-11-24 13:54:17,969 - embedding_pipeline - INFO - 生成了 303 個文檔塊

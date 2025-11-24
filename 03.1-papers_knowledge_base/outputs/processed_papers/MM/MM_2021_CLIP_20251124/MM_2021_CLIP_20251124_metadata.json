@@ -1,0 +1,15 @@
+{
+  "output_name": "MM_2021_CLIP_20251124",
+  "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/04_multimodal/2021_CLIP.pdf",
+  "category_code": "MM",
+  "processing_time": "2025-11-24T18:36:34.159219",
+  "paper_info": {
+    "year": "2021",
+    "name": "CLIP",
+    "original_filename": "2021_CLIP"
+  },
+  "output_locations": {
+    "processed_paper_dir": "outputs/processed_papers/MM/MM_2021_CLIP_20251124",
+    "aggregated_chunk_path": "outputs/aggregated_chunks/MM_2021_CLIP_20251124.jsonl"
+  }
+}
