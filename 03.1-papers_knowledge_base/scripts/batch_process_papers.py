@@ -244,7 +244,9 @@ class PaperProcessor:
 
 def main():
     parser = argparse.ArgumentParser(description="批量處理論文 PDF 文件")
-    parser.add_argument("--input_dir", required=True, help="輸入 PDF 目錄")
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument("--input_dir", help="輸入 PDF 目錄")
+    group.add_argument("--input_file", help="單個 PDF 文件路徑")
     parser.add_argument("--output_dir", required=True, help="輸出目錄")
     parser.add_argument("--category", required=True, help="分類代碼 (MP/IF/LM/MM)")
     parser.add_argument("--max_workers", type=int, default=2, help="最大並行處理數")
@@ -254,11 +256,28 @@ def main():
 
     args = parser.parse_args()
 
-    # 驗證參數
-    input_dir = Path(args.input_dir)
-    if not input_dir.exists():
-        logger.error(f"輸入目錄不存在: {input_dir}")
-        return
+    # 驗證參數並獲取PDF文件列表
+    pdf_files = []
+    if args.input_dir:
+        input_dir = Path(args.input_dir)
+        if not input_dir.exists():
+            logger.error(f"輸入目錄不存在: {input_dir}")
+            return
+        pdf_files = list(input_dir.glob("*.pdf"))
+        if not pdf_files:
+            logger.warning(f"在 {input_dir} 中沒有找到 PDF 文件")
+            return
+        logger.info(f"找到 {len(pdf_files)} 個 PDF 文件")
+    else:
+        input_file = Path(args.input_file)
+        if not input_file.exists():
+            logger.error(f"輸入文件不存在: {input_file}")
+            return
+        if input_file.suffix.lower() != '.pdf':
+            logger.error(f"文件不是PDF格式: {input_file}")
+            return
+        pdf_files = [input_file]
+        logger.info(f"處理單個文件: {input_file.name}")
 
     # 創建輸出目錄
     output_dir = Path(args.output_dir)
@@ -267,13 +286,6 @@ def main():
     # 設置日誌
     setup_logging(output_dir)
 
-    # 找到所有 PDF 文件
-    pdf_files = list(input_dir.glob("*.pdf"))
-    if not pdf_files:
-        logger.warning(f"在 {input_dir} 中沒有找到 PDF 文件")
-        return
-
-    logger.info(f"找到 {len(pdf_files)} 個 PDF 文件")
     logger.info(f"輸出目錄: {output_dir}")
     logger.info(f"分類代碼: {args.category}")
     logger.info(f"最大並行數: {args.max_workers}")
@@ -327,7 +339,7 @@ def main():
             "failed": len(failed),
             "processing_time": str(processing_time),
             "category": args.category,
-            "input_dir": str(input_dir),
+            "input_source": str(args.input_dir if args.input_dir else args.input_file),
             "output_dir": str(output_dir)
         },
         "results": results,

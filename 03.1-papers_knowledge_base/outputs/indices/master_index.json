@@ -1,10 +1,13 @@
 {
   "metadata": {
-    "total_papers": 5,
+    "total_papers": 30,
     "categories": [
-      "IF"
+      "MP",
+      "IF",
+      "LM",
+      "MM"
     ],
-    "generation_time": "2025-11-24T18:08:13.894975",
+    "generation_time": "2025-11-25T09:41:35.474561",
     "base_directory": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base",
     "architecture_version": "2.0",
     "outputs_structure": {
@@ -15,6 +18,483 @@
   },
   "papers": [
     {
+      "id": "f1edae39fd88",
+      "output_name": "MP_2021_LoRA_20251124",
+      "category_code": "MP",
+      "category_name": "模型範式",
+      "category_name_en": "Model_Paradigm",
+      "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MP/MP_2021_LoRA_20251124",
+      "has_metadata": true,
+      "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/01_model_paradigm/2021_LoRA.pdf",
+      "processing_time": "2025-11-24T20:39:56.922146",
+      "paper_info": {
+        "year": "2021",
+        "name": "LoRA",
+        "original_filename": "2021_LoRA"
+      },
+      "output_locations": {
+        "processed_paper_dir": "outputs/processed_papers/MP/MP_2021_LoRA_20251124",
+        "aggregated_chunk_path": "outputs/aggregated_chunks/MP_2021_LoRA_20251124.jsonl"
+      },
+      "files": {
+        "jsonl_files": [
+          {
+            "filename": "MP_2021_LoRA_20251124.jsonl",
+            "size": 100403,
+            "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MP/MP_2021_LoRA_20251124/MP_2021_LoRA_20251124.jsonl"
+          }
+        ],
+        "workspace_files": [
+          {
+            "filename": "work_index_list.csv.zstd",
+            "relative_path": "work_index_list.csv.zstd",
+            "size": 151
+          },
+          {
+            "filename": "done_c67e6de138440b90287b8579b71d9580423532fb.flag",
+            "relative_path": "done_flags/done_c67e6de138440b90287b8579b71d9580423532fb.flag",
+            "size": 0
+          },
+          {
+            "filename": "output_c67e6de138440b90287b8579b71d9580423532fb.jsonl",
+            "relative_path": "results/output_c67e6de138440b90287b8579b71d9580423532fb.jsonl",
+            "size": 100403
+          }
+        ],
+        "total_size": 200957
+      },
+      "content_summary": {
+        "has_content": true,
+        "estimated_pages": 46,
+        "content_preview": "LoRA: Low-Rank Adaptation of Large Language Models\n\nEdward Hu*    Yelong Shen*    Phillip Wallis    Zeyuan Allen-Zhu\nYuanzhi Li    Shean Wang    Lu Wang    Weizhu Chen\nMicrosoft Corporation\n{edwardhu, yeshe, phwallis, zeyuana, yuanzhil, swang, luw, wzchen}@microsoft.com\nyuanzhil@andrew.cmu.edu\n(Vers..."
+      },
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "3a9a76ada62e",
+      "output_name": "MP_2017_MoE_20251124",
+      "category_code": "MP",
+      "category_name": "模型範式",
+      "category_name_en": "Model_Paradigm",
+      "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MP/MP_2017_MoE_20251124",
+      "has_metadata": true,
+      "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/01_model_paradigm/2017_MoE.pdf",
+      "processing_time": "2025-11-24T21:04:44.378965",
+      "paper_info": {
+        "year": "2017",
+        "name": "MoE",
+        "original_filename": "2017_MoE"
+      },
+      "output_locations": {
+        "processed_paper_dir": "outputs/processed_papers/MP/MP_2017_MoE_20251124",
+        "aggregated_chunk_path": "outputs/aggregated_chunks/MP_2017_MoE_20251124.jsonl"
+      },
+      "files": {
+        "jsonl_files": [
+          {
+            "filename": "MP_2017_MoE_20251124.jsonl",
+            "size": 74534,
+            "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MP/MP_2017_MoE_20251124/MP_2017_MoE_20251124.jsonl"
+          }
+        ],
+        "workspace_files": [
+          {
+            "filename": "work_index_list.csv.zstd",
+            "relative_path": "work_index_list.csv.zstd",
+            "size": 148
+          },
+          {
+            "filename": "done_1b18e594898c27cde6809eba6374c15bdbdcc660.flag",
+            "relative_path": "done_flags/done_1b18e594898c27cde6809eba6374c15bdbdcc660.flag",
+            "size": 0
+          },
+          {
+            "filename": "output_1b18e594898c27cde6809eba6374c15bdbdcc660.jsonl",
+            "relative_path": "results/output_1b18e594898c27cde6809eba6374c15bdbdcc660.jsonl",
+            "size": 74534
+          }
+        ],
+        "total_size": 149216
+      },
+      "content_summary": {
+        "has_content": true,
+        "estimated_pages": 35,
+        "content_preview": "OUTRAGEOUSLY LARGE NEURAL NETWORKS:\nTHE SPARSELY-GATED MIXTURE-OF-EXPERTS LAYER\n\nNoam Shazeer1, Azalia Mirhoseini*†‡, Krzysztof Maziarz*‡, Andy Davis1, Quoc Le1, Geoffrey Hinton1 and Jeff Dean1\n\n1Google Brain, {noam.azalia,andydavis,qvl,geoffhinton,jeff}@google.com\n2Jagiellonian University, Cracow, ..."
+      },
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "1014b4312d33",
+      "output_name": "MP_2012_AlexNet_20251124",
+      "category_code": "MP",
+      "category_name": "模型範式",
+      "category_name_en": "Model_Paradigm",
+      "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MP/MP_2012_AlexNet_20251124",
+      "has_metadata": true,
+      "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/01_model_paradigm/2012_AlexNet.pdf",
+      "processing_time": "2025-11-24T20:48:28.273814",
+      "paper_info": {
+        "year": "2012",
+        "name": "AlexNet",
+        "original_filename": "2012_AlexNet"
+      },
+      "output_locations": {
+        "processed_paper_dir": "outputs/processed_papers/MP/MP_2012_AlexNet_20251124",
+        "aggregated_chunk_path": "outputs/aggregated_chunks/MP_2012_AlexNet_20251124.jsonl"
+      },
+      "files": {
+        "jsonl_files": [
+          {
+            "filename": "MP_2012_AlexNet_20251124.jsonl",
+            "size": 39557,
+            "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MP/MP_2012_AlexNet_20251124/MP_2012_AlexNet_20251124.jsonl"
+          }
+        ],
+        "workspace_files": [
+          {
+            "filename": "work_index_list.csv.zstd",
+            "relative_path": "work_index_list.csv.zstd",
+            "size": 152
+          },
+          {
+            "filename": "done_3c5aad752b7a5fbb28d3de4a433216903cc99395.flag",
+            "relative_path": "done_flags/done_3c5aad752b7a5fbb28d3de4a433216903cc99395.flag",
+            "size": 0
+          },
+          {
+            "filename": "output_3c5aad752b7a5fbb28d3de4a433216903cc99395.jsonl",
+            "relative_path": "results/output_3c5aad752b7a5fbb28d3de4a433216903cc99395.jsonl",
+            "size": 39557
+          }
+        ],
+        "total_size": 79266
+      },
+      "content_summary": {
+        "has_content": true,
+        "estimated_pages": 18,
+        "content_preview": "ImageNet Classification with Deep Convolutional Neural Networks\n\nAlex Krizhevsky\nUniversity of Toronto\nkriz@cs.utoronto.ca\n\nIlya Sutskever\nUniversity of Toronto\nilya@cs.utoronto.ca\n\nGeoffrey E. Hinton\nUniversity of Toronto\nhinton@cs.utoronto.ca\n\nAbstract\n\nWe trained a large, deep convolutional neura..."
+      },
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "3dd7dbed0fd4",
+      "output_name": "MP_2014_Seq2Seq_20251124",
+      "category_code": "MP",
+      "category_name": "模型範式",
+      "category_name_en": "Model_Paradigm",
+      "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MP/MP_2014_Seq2Seq_20251124",
+      "has_metadata": true,
+      "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/01_model_paradigm/2014_Seq2Seq.pdf",
+      "processing_time": "2025-11-24T20:50:59.721138",
+      "paper_info": {
+        "year": "2014",
+        "name": "Seq2Seq",
+        "original_filename": "2014_Seq2Seq"
+      },
+      "output_locations": {
+        "processed_paper_dir": "outputs/processed_papers/MP/MP_2014_Seq2Seq_20251124",
+        "aggregated_chunk_path": "outputs/aggregated_chunks/MP_2014_Seq2Seq_20251124.jsonl"
+      },
+      "files": {
+        "jsonl_files": [
+          {
+            "filename": "MP_2014_Seq2Seq_20251124.jsonl",
+            "size": 37097,
+            "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MP/MP_2014_Seq2Seq_20251124/MP_2014_Seq2Seq_20251124.jsonl"
+          }
+        ],
+        "workspace_files": [
+          {
+            "filename": "work_index_list.csv.zstd",
+            "relative_path": "work_index_list.csv.zstd",
+            "size": 152
+          },
+          {
+            "filename": "done_995c0df3d61855815f85f4742a431f0fff062fc6.flag",
+            "relative_path": "done_flags/done_995c0df3d61855815f85f4742a431f0fff062fc6.flag",
+            "size": 0
+          },
+          {
+            "filename": "output_995c0df3d61855815f85f4742a431f0fff062fc6.jsonl",
+            "relative_path": "results/output_995c0df3d61855815f85f4742a431f0fff062fc6.jsonl",
+            "size": 37097
+          }
+        ],
+        "total_size": 74346
+      },
+      "content_summary": {
+        "has_content": true,
+        "estimated_pages": 17,
+        "content_preview": "Sequence to Sequence Learning with Neural Networks\n\nIlya Sutskever\nGoogle\nilyasu@google.com\n\nOriol Vinyals\nGoogle\nvinyals@google.com\n\nQuoc V. Le\nGoogle\nqvl@google.com\n\nAbstract\n\nDeep Neural Networks (DNNs) are powerful models that have achieved excellent performance on difficult learning tasks. Alth..."
+      },
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "e198c6696cdb",
+      "output_name": "MP_2017_Transformer_20251124",
+      "category_code": "MP",
+      "category_name": "模型範式",
+      "category_name_en": "Model_Paradigm",
+      "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MP/MP_2017_Transformer_20251124",
+      "has_metadata": true,
+      "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/01_model_paradigm/2017_Transformer.pdf",
+      "processing_time": "2025-11-24T19:56:54.066870",
+      "paper_info": {
+        "year": "2017",
+        "name": "Transformer",
+        "original_filename": "2017_Transformer"
+      },
+      "output_locations": {
+        "processed_paper_dir": "outputs/processed_papers/MP/MP_2017_Transformer_20251124",
+        "aggregated_chunk_path": "outputs/aggregated_chunks/MP_2017_Transformer_20251124.jsonl"
+      },
+      "files": {
+        "jsonl_files": [
+          {
+            "filename": "MP_2017_Transformer_20251124.jsonl",
+            "size": 44207,
+            "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MP/MP_2017_Transformer_20251124/MP_2017_Transformer_20251124.jsonl"
+          }
+        ],
+        "workspace_files": [
+          {
+            "filename": "work_index_list.csv.zstd",
+            "relative_path": "work_index_list.csv.zstd",
+            "size": 154
+          },
+          {
+            "filename": "done_538ba866133b3fcd9dbcab1e7de3c7ef42508417.flag",
+            "relative_path": "done_flags/done_538ba866133b3fcd9dbcab1e7de3c7ef42508417.flag",
+            "size": 0
+          },
+          {
+            "filename": "output_538ba866133b3fcd9dbcab1e7de3c7ef42508417.jsonl",
+            "relative_path": "results/output_538ba866133b3fcd9dbcab1e7de3c7ef42508417.jsonl",
+            "size": 44207
+          }
+        ],
+        "total_size": 88568
+      },
+      "content_summary": {
+        "has_content": true,
+        "estimated_pages": 20,
+        "content_preview": "Provided proper attribution is provided, Google hereby grants permission to reproduce the tables and figures in this paper solely for use in journalistic or scholarly works.\n\nAttention Is All You Need\n\nAshish Vaswani*\nGoogle Brain\navaswani@google.com\n\nNoam Shazeer*\nGoogle Brain\nnoam@google.com\n\nNiki..."
+      },
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "96d536ac8033",
+      "output_name": "MP_2015_ResNet_20251124",
+      "category_code": "MP",
+      "category_name": "模型範式",
+      "category_name_en": "Model_Paradigm",
+      "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MP/MP_2015_ResNet_20251124",
+      "has_metadata": true,
+      "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/01_model_paradigm/2015_ResNet.pdf",
+      "processing_time": "2025-11-24T20:23:30.152073",
+      "paper_info": {
+        "year": "2015",
+        "name": "ResNet",
+        "original_filename": "2015_ResNet"
+      },
+      "output_locations": {
+        "processed_paper_dir": "outputs/processed_papers/MP/MP_2015_ResNet_20251124",
+        "aggregated_chunk_path": "outputs/aggregated_chunks/MP_2015_ResNet_20251124.jsonl"
+      },
+      "files": {
+        "jsonl_files": [
+          {
+            "filename": "MP_2015_ResNet_20251124.jsonl",
+            "size": 63938,
+            "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MP/MP_2015_ResNet_20251124/MP_2015_ResNet_20251124.jsonl"
+          }
+        ],
+        "workspace_files": [
+          {
+            "filename": "work_index_list.csv.zstd",
+            "relative_path": "work_index_list.csv.zstd",
+            "size": 150
+          },
+          {
+            "filename": "done_ed848dbdec475e04acd3e53131104356ed604746.flag",
+            "relative_path": "done_flags/done_ed848dbdec475e04acd3e53131104356ed604746.flag",
+            "size": 0
+          },
+          {
+            "filename": "output_ed848dbdec475e04acd3e53131104356ed604746.jsonl",
+            "relative_path": "results/output_ed848dbdec475e04acd3e53131104356ed604746.jsonl",
+            "size": 63938
+          }
+        ],
+        "total_size": 128026
+      },
+      "content_summary": {
+        "has_content": true,
+        "estimated_pages": 30,
+        "content_preview": "Deep Residual Learning for Image Recognition\n\nKaiming He      Xiangyu Zhang      Shaoqing Ren      Jian Sun\nMicrosoft Research\n{kahe, v-xiangz, v-shren, jiansun}@microsoft.com\n\nAbstract\n\nDeeper neural networks are more difficult to train. We present a residual learning framework to ease the training..."
+      },
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "b085b10c3104",
+      "output_name": "MP_2022_ReAct_20251124",
+      "category_code": "MP",
+      "category_name": "模型範式",
+      "category_name_en": "Model_Paradigm",
+      "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MP/MP_2022_ReAct_20251124",
+      "has_metadata": true,
+      "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/01_model_paradigm/2022_ReAct.pdf",
+      "processing_time": "2025-11-24T20:45:45.140781",
+      "paper_info": {
+        "year": "2022",
+        "name": "ReAct",
+        "original_filename": "2022_ReAct"
+      },
+      "output_locations": {
+        "processed_paper_dir": "outputs/processed_papers/MP/MP_2022_ReAct_20251124",
+        "aggregated_chunk_path": "outputs/aggregated_chunks/MP_2022_ReAct_20251124.jsonl"
+      },
+      "files": {
+        "jsonl_files": [
+          {
+            "filename": "MP_2022_ReAct_20251124.jsonl",
+            "size": 119295,
+            "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MP/MP_2022_ReAct_20251124/MP_2022_ReAct_20251124.jsonl"
+          }
+        ],
+        "workspace_files": [
+          {
+            "filename": "work_index_list.csv.zstd",
+            "relative_path": "work_index_list.csv.zstd",
+            "size": 149
+          },
+          {
+            "filename": "done_7d0019cdf39b895e44a2db83a8ff025dc5054742.flag",
+            "relative_path": "done_flags/done_7d0019cdf39b895e44a2db83a8ff025dc5054742.flag",
+            "size": 0
+          },
+          {
+            "filename": "output_7d0019cdf39b895e44a2db83a8ff025dc5054742.jsonl",
+            "relative_path": "results/output_7d0019cdf39b895e44a2db83a8ff025dc5054742.jsonl",
+            "size": 119295
+          }
+        ],
+        "total_size": 238739
+      },
+      "content_summary": {
+        "has_content": true,
+        "estimated_pages": 57,
+        "content_preview": "ReAct: Synergizing Reasoning and Acting in Language Models\n\nShunyu Yao*1, Jeffrey Zhao2, Dian Yu2, Nan Du2, Izhak Shafran2, Karthik Narasimhan1, Yuan Cao2\n\n1Department of Computer Science, Princeton University\n2Google Research, Brain team\n1{shunuy,karthikn}@princeton.edu\n2{jeffreyzhao,dianyu,dunan,i..."
+      },
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "2f5e7651884b",
+      "output_name": "MP_2015_Knowledge_Distillation_20251124",
+      "category_code": "MP",
+      "category_name": "模型範式",
+      "category_name_en": "Model_Paradigm",
+      "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MP/MP_2015_Knowledge_Distillation_20251124",
+      "has_metadata": true,
+      "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/01_model_paradigm/2015_Knowledge_Distillation.pdf",
+      "processing_time": "2025-11-24T20:53:27.889756",
+      "paper_info": {
+        "year": "2015",
+        "name": "Knowledge_Distillation",
+        "original_filename": "2015_Knowledge_Distillation"
+      },
+      "output_locations": {
+        "processed_paper_dir": "outputs/processed_papers/MP/MP_2015_Knowledge_Distillation_20251124",
+        "aggregated_chunk_path": "outputs/aggregated_chunks/MP_2015_Knowledge_Distillation_20251124.jsonl"
+      },
+      "files": {
+        "jsonl_files": [
+          {
+            "filename": "MP_2015_Knowledge_Distillation_20251124.jsonl",
+            "size": 37651,
+            "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MP/MP_2015_Knowledge_Distillation_20251124/MP_2015_Knowledge_Distillation_20251124.jsonl"
+          }
+        ],
+        "workspace_files": [
+          {
+            "filename": "work_index_list.csv.zstd",
+            "relative_path": "work_index_list.csv.zstd",
+            "size": 163
+          },
+          {
+            "filename": "done_74f8c1d65cf6b669e39c4034b111178a235d9fa2.flag",
+            "relative_path": "done_flags/done_74f8c1d65cf6b669e39c4034b111178a235d9fa2.flag",
+            "size": 0
+          },
+          {
+            "filename": "output_74f8c1d65cf6b669e39c4034b111178a235d9fa2.jsonl",
+            "relative_path": "results/output_74f8c1d65cf6b669e39c4034b111178a235d9fa2.jsonl",
+            "size": 37651
+          }
+        ],
+        "total_size": 75465
+      },
+      "content_summary": {
+        "has_content": true,
+        "estimated_pages": 17,
+        "content_preview": "Distilling the Knowledge in a Neural Network\n\nGeoffrey Hinton*†\nGoogle Inc.\nMountain View\ngeoffhinton@google.com\n\nOriol Vinyals†\nGoogle Inc.\nMountain View\nvinyals@google.com\n\nJeff Dean\nGoogle Inc.\nMountain View\njeff@google.com\n\nAbstract\n\nA very simple way to improve the performance of almost any mac..."
+      },
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "b0f9061a5b57",
+      "output_name": "MP_2022_Chain_of_Thought_20251124",
+      "category_code": "MP",
+      "category_name": "模型範式",
+      "category_name_en": "Model_Paradigm",
+      "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MP/MP_2022_Chain_of_Thought_20251124",
+      "has_metadata": true,
+      "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/01_model_paradigm/2022_Chain_of_Thought.pdf",
+      "processing_time": "2025-11-24T20:10:16.707627",
+      "paper_info": {
+        "year": "2022",
+        "name": "Chain_of_Thought",
+        "original_filename": "2022_Chain_of_Thought"
+      },
+      "output_locations": {
+        "processed_paper_dir": "outputs/processed_papers/MP/MP_2022_Chain_of_Thought_20251124",
+        "aggregated_chunk_path": "outputs/aggregated_chunks/MP_2022_Chain_of_Thought_20251124.jsonl"
+      },
+      "files": {
+        "jsonl_files": [
+          {
+            "filename": "MP_2022_Chain_of_Thought_20251124.jsonl",
+            "size": 147469,
+            "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MP/MP_2022_Chain_of_Thought_20251124/MP_2022_Chain_of_Thought_20251124.jsonl"
+          }
+        ],
+        "workspace_files": [
+          {
+            "filename": "work_index_list.csv.zstd",
+            "relative_path": "work_index_list.csv.zstd",
+            "size": 159
+          },
+          {
+            "filename": "done_6d1792a459b643e894f8216d5b7118910827fa5c.flag",
+            "relative_path": "done_flags/done_6d1792a459b643e894f8216d5b7118910827fa5c.flag",
+            "size": 0
+          },
+          {
+            "filename": "output_6d1792a459b643e894f8216d5b7118910827fa5c.jsonl",
+            "relative_path": "results/output_6d1792a459b643e894f8216d5b7118910827fa5c.jsonl",
+            "size": 147469
+          }
+        ],
+        "total_size": 295097
+      },
+      "content_summary": {
+        "has_content": true,
+        "estimated_pages": 70,
+        "content_preview": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models\n\nJason Wei        Xuezhi Wang        Dale Schuurmans        Maarten Bosma\nBrian Ichter     Fei Xia            Ed H. Chi             Quoc V. Le      Denny Zhou\nGoogle Research, Brain Team\n{jasonwei,dennyzhou}@google.com\n\nAbstract\n\n..."
+      },
+      "has_aggregated_chunk": true
+    },
+    {
       "id": "cf9ded6ba783",
       "output_name": "IF_2024_MegaScale_20251124",
       "category_code": "IF",
@@ -23,7 +503,7 @@
       "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/IF/IF_2024_MegaScale_20251124",
       "has_metadata": true,
       "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/02_infrastructure/2024_MegaScale.pdf",
-      "processing_time": "2025-11-24T18:06:47.405602",
+      "processing_time": "2025-11-24T19:45:48.159810",
       "paper_info": {
         "year": "2024",
         "name": "MegaScale",
@@ -37,7 +517,7 @@
         "jsonl_files": [
           {
             "filename": "IF_2024_MegaScale_20251124.jsonl",
-            "size": 80234,
+            "size": 80279,
             "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/IF/IF_2024_MegaScale_20251124/IF_2024_MegaScale_20251124.jsonl"
           }
         ],
@@ -55,15 +535,15 @@
           {
             "filename": "output_6b574ff78f050931c0db64a7132c39e1f23b371c.jsonl",
             "relative_path": "results/output_6b574ff78f050931c0db64a7132c39e1f23b371c.jsonl",
-            "size": 80234
+            "size": 80279
           }
         ],
-        "total_size": 160622
+        "total_size": 160712
       },
       "content_summary": {
         "has_content": true,
         "estimated_pages": 38,
-        "content_preview": "MegaScale: Scaling Large Language Model Training to More Than 10,000 GPUs\n\nZiheng Jiang¹,*  Haibin Lin¹,*  Yinmin Zhong²,*  Qi Huang¹  Yangrui Chen¹  Zhi Zhang¹\nYanghua Peng¹  Xiang Li¹  Cong Xie¹  Shibiao Nong¹  Yulu Jia¹  Sun He¹  Hongmin Chen¹\nZhihao Bai¹  Qi Hou¹  Shipeng Yan¹  Ding Zhou¹  Yiyao..."
+        "content_preview": "MegaScale: Scaling Large Language Model Training to More Than 10,000 GPUs\n\nZiheng Jiang$^{1,*}$ Haibin Lin$^{1,*}$ Yinmin Zhong$^{2,*}$ Qi Huang$^{1}$ Yangrui Chen$^{1}$ Zhi Zhang$^{1}$\nYanghua Peng$^{1}$ Xiang Li$^{1}$ Cong Xie$^{1}$ Shibiao Nong$^{1}$ Yulu Jia$^{1}$ Sun He$^{1}$ Hongmin Chen$^{1}$..."
       },
       "has_aggregated_chunk": true
     },
@@ -76,7 +556,7 @@
       "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/IF/IF_2019_ZeRO_20251124",
       "has_metadata": true,
       "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/02_infrastructure/2019_ZeRO.pdf",
-      "processing_time": "2025-11-24T17:57:00.232725",
+      "processing_time": "2025-11-24T19:35:40.529002",
       "paper_info": {
         "year": "2019",
         "name": "ZeRO",
@@ -90,7 +570,7 @@
         "jsonl_files": [
           {
             "filename": "IF_2019_ZeRO_20251124.jsonl",
-            "size": 77156,
+            "size": 78308,
             "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/IF/IF_2019_ZeRO_20251124/IF_2019_ZeRO_20251124.jsonl"
           }
         ],
@@ -108,14 +588,14 @@
           {
             "filename": "output_551a84476c3a842d7af7374593a09025b9a464bd.jsonl",
             "relative_path": "results/output_551a84476c3a842d7af7374593a09025b9a464bd.jsonl",
-            "size": 77156
+            "size": 78308
           }
         ],
-        "total_size": 154463
+        "total_size": 156767
       },
       "content_summary": {
         "has_content": true,
-        "estimated_pages": 36,
+        "estimated_pages": 37,
         "content_preview": "ZeRO: Memory Optimizations Toward Training Trillion Parameter Models\n\nSamyam Rajbhandari*, Jeff Rasley*, Olatunji Ruwase, Yuxiong He\n{samyamr, jerasley, olruwase, yuxhe}@microsoft.com\n\nAbstract\n\nLarge deep learning models offer significant accuracy gains, but training billions to trillions of parame..."
       },
       "has_aggregated_chunk": true
@@ -129,7 +609,7 @@
       "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/IF/IF_2020_Scaling_Laws_20251124",
       "has_metadata": true,
       "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/02_infrastructure/2020_Scaling_Laws.pdf",
-      "processing_time": "2025-11-24T17:44:28.631609",
+      "processing_time": "2025-11-24T19:23:33.194444",
       "paper_info": {
         "year": "2020",
         "name": "Scaling_Laws",
@@ -143,7 +623,7 @@
         "jsonl_files": [
           {
             "filename": "IF_2020_Scaling_Laws_20251124.jsonl",
-            "size": 99738,
+            "size": 99563,
             "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/IF/IF_2020_Scaling_Laws_20251124/IF_2020_Scaling_Laws_20251124.jsonl"
           }
         ],
@@ -161,10 +641,10 @@
           {
             "filename": "output_6c4c733bcd425e89437c8586565a490a99f59733.jsonl",
             "relative_path": "results/output_6c4c733bcd425e89437c8586565a490a99f59733.jsonl",
-            "size": 99738
+            "size": 99563
           }
         ],
-        "total_size": 199631
+        "total_size": 199281
       },
       "content_summary": {
         "has_content": true,
@@ -182,7 +662,7 @@
       "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/IF/IF_2022_LAION_5B_20251124",
       "has_metadata": true,
       "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/02_infrastructure/2022_LAION_5B.pdf",
-      "processing_time": "2025-11-24T17:27:23.099748",
+      "processing_time": "2025-11-24T19:07:09.307832",
       "paper_info": {
         "year": "2022",
         "name": "LAION_5B",
@@ -196,7 +676,7 @@
         "jsonl_files": [
           {
             "filename": "IF_2022_LAION_5B_20251124.jsonl",
-            "size": 139227,
+            "size": 139230,
             "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/IF/IF_2022_LAION_5B_20251124/IF_2022_LAION_5B_20251124.jsonl"
           }
         ],
@@ -204,11 +684,21 @@
           {
             "filename": "work_index_list.csv.zstd",
             "relative_path": "work_index_list.csv.zstd",
-            "size": 199
+            "size": 283
           },
           {
             "filename": "done_dfeca941055b397c8f5e468d17ffd5b5b0b48968.flag",
             "relative_path": "done_flags/done_dfeca941055b397c8f5e468d17ffd5b5b0b48968.flag",
+            "size": 0
+          },
+          {
+            "filename": "worker_245d029f906d54c69319b0d07f90a73f2f6793ad.lock",
+            "relative_path": "worker_locks/worker_245d029f906d54c69319b0d07f90a73f2f6793ad.lock",
+            "size": 0
+          },
+          {
+            "filename": "worker_7894a96452b1da91693cc0b2c379d17fdadaffaf.lock",
+            "relative_path": "worker_locks/worker_7894a96452b1da91693cc0b2c379d17fdadaffaf.lock",
             "size": 0
           },
           {
@@ -219,10 +709,10 @@
           {
             "filename": "output_dfeca941055b397c8f5e468d17ffd5b5b0b48968.jsonl",
             "relative_path": "results/output_dfeca941055b397c8f5e468d17ffd5b5b0b48968.jsonl",
-            "size": 139227
+            "size": 139230
           }
         ],
-        "total_size": 278653
+        "total_size": 278743
       },
       "content_summary": {
         "has_content": true,
@@ -240,7 +730,7 @@
       "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/IF/IF_2023_RefinedWeb_20251124",
       "has_metadata": true,
       "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/02_infrastructure/2023_RefinedWeb.pdf",
-      "processing_time": "2025-11-24T17:39:45.189973",
+      "processing_time": "2025-11-24T19:19:00.344055",
       "paper_info": {
         "year": "2023",
         "name": "RefinedWeb",
@@ -254,7 +744,7 @@
         "jsonl_files": [
           {
             "filename": "IF_2023_RefinedWeb_20251124.jsonl",
-            "size": 131817,
+            "size": 131948,
             "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/IF/IF_2023_RefinedWeb_20251124/IF_2023_RefinedWeb_20251124.jsonl"
           }
         ],
@@ -272,15 +762,878 @@
           {
             "filename": "output_17d406c916fa4fa7bc0a365e1bb95670a9f4e863.jsonl",
             "relative_path": "results/output_17d406c916fa4fa7bc0a365e1bb95670a9f4e863.jsonl",
-            "size": 131817
+            "size": 131948
           }
         ],
-        "total_size": 263788
+        "total_size": 264050
       },
       "content_summary": {
         "has_content": true,
         "estimated_pages": 63,
         "content_preview": "The RefinedWeb Dataset for Falcon LLM:\nOutperforming Curated Corpora with Web Data, and Web Data Only\n\nThe Falcon LLM team\nGuilherme Penedo¹ Quentin Malartic²\nDaniel Hesslow¹ Ruxandra Cojocaru² Alessandro Cappelli¹ Hamza Alobeidli² Baptiste Pannier¹\nEbtesam Almazrouei² Julien Launay¹³\n\nhttps://huggi..."
+      },
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "7a472fa03b7f",
+      "output_name": "LM_2018_BERT_20251124",
+      "category_code": "LM",
+      "category_name": "語言模型",
+      "category_name_en": "Language_Models",
+      "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/LM/LM_2018_BERT_20251124",
+      "has_metadata": true,
+      "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/03_language_models/2018_BERT.pdf",
+      "processing_time": "2025-11-24T23:01:54.116449",
+      "paper_info": {
+        "year": "2018",
+        "name": "BERT",
+        "original_filename": "2018_BERT"
+      },
+      "output_locations": {
+        "processed_paper_dir": "outputs/processed_papers/LM/LM_2018_BERT_20251124",
+        "aggregated_chunk_path": "outputs/aggregated_chunks/LM_2018_BERT_20251124.jsonl"
+      },
+      "files": {
+        "jsonl_files": [
+          {
+            "filename": "LM_2018_BERT_20251124.jsonl",
+            "size": 71260,
+            "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/LM/LM_2018_BERT_20251124/LM_2018_BERT_20251124.jsonl"
+          }
+        ],
+        "workspace_files": [
+          {
+            "filename": "work_index_list.csv.zstd",
+            "relative_path": "work_index_list.csv.zstd",
+            "size": 153
+          },
+          {
+            "filename": "done_4479b88624043bd77c3258205c257f98db8ec174.flag",
+            "relative_path": "done_flags/done_4479b88624043bd77c3258205c257f98db8ec174.flag",
+            "size": 0
+          },
+          {
+            "filename": "output_4479b88624043bd77c3258205c257f98db8ec174.jsonl",
+            "relative_path": "results/output_4479b88624043bd77c3258205c257f98db8ec174.jsonl",
+            "size": 71260
+          }
+        ],
+        "total_size": 142673
+      },
+      "content_summary": {
+        "has_content": true,
+        "estimated_pages": 34,
+        "content_preview": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding\n\nJacob Devlin    Ming-Wei Chang    Kenton Lee    Kristina Toutanova\nGoogle AI Language\n{jacobdevlin,mingweichang,kentonl,kristout}@google.com\n\nAbstract\nWe introduce a new language representation model called BERT, which..."
+      },
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "fa84f547ba5c",
+      "output_name": "LM_2022_InstructGPT_20251124",
+      "category_code": "LM",
+      "category_name": "語言模型",
+      "category_name_en": "Language_Models",
+      "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/LM/LM_2022_InstructGPT_20251124",
+      "has_metadata": true,
+      "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/03_language_models/2022_InstructGPT.pdf",
+      "processing_time": "2025-11-24T23:36:44.748244",
+      "paper_info": {
+        "year": "2022",
+        "name": "InstructGPT",
+        "original_filename": "2022_InstructGPT"
+      },
+      "output_locations": {
+        "processed_paper_dir": "outputs/processed_papers/LM/LM_2022_InstructGPT_20251124",
+        "aggregated_chunk_path": "outputs/aggregated_chunks/LM_2022_InstructGPT_20251124.jsonl"
+      },
+      "files": {
+        "jsonl_files": [
+          {
+            "filename": "LM_2022_InstructGPT_20251124.jsonl",
+            "size": 203956,
+            "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/LM/LM_2022_InstructGPT_20251124/LM_2022_InstructGPT_20251124.jsonl"
+          }
+        ],
+        "workspace_files": [
+          {
+            "filename": "work_index_list.csv.zstd",
+            "relative_path": "work_index_list.csv.zstd",
+            "size": 156
+          },
+          {
+            "filename": "done_ea728aa31c3556ae130c72d04d3eb110540612ef.flag",
+            "relative_path": "done_flags/done_ea728aa31c3556ae130c72d04d3eb110540612ef.flag",
+            "size": 0
+          },
+          {
+            "filename": "output_ea728aa31c3556ae130c72d04d3eb110540612ef.jsonl",
+            "relative_path": "results/output_ea728aa31c3556ae130c72d04d3eb110540612ef.jsonl",
+            "size": 203956
+          }
+        ],
+        "total_size": 408068
+      },
+      "content_summary": {
+        "has_content": true,
+        "estimated_pages": 96,
+        "content_preview": "Training language models to follow instructions with human feedback\n\nLong Ouyang*    Jeff Wu*    Xu Jiang*    Diogo Almeida*    Carroll L. Wainwright*\nPamela Mishkin*    Chong Zhang    Sandhini Agarwal    Katarina Slama    Alex Ray\nJohn Schulman    Jacob Hilton    Fraser Kelton    Luke Miller    Mad..."
+      },
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "5a20066ae95e",
+      "output_name": "LM_2013_Word2Vec_20251124",
+      "category_code": "LM",
+      "category_name": "語言模型",
+      "category_name_en": "Language_Models",
+      "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/LM/LM_2013_Word2Vec_20251124",
+      "has_metadata": true,
+      "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/03_language_models/2013_Word2Vec.pdf",
+      "processing_time": "2025-11-24T22:43:36.061315",
+      "paper_info": {
+        "year": "2013",
+        "name": "Word2Vec",
+        "original_filename": "2013_Word2Vec"
+      },
+      "output_locations": {
+        "processed_paper_dir": "outputs/processed_papers/LM/LM_2013_Word2Vec_20251124",
+        "aggregated_chunk_path": "outputs/aggregated_chunks/LM_2013_Word2Vec_20251124.jsonl"
+      },
+      "files": {
+        "jsonl_files": [
+          {
+            "filename": "LM_2013_Word2Vec_20251124.jsonl",
+            "size": 44321,
+            "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/LM/LM_2013_Word2Vec_20251124/LM_2013_Word2Vec_20251124.jsonl"
+          }
+        ],
+        "workspace_files": [
+          {
+            "filename": "work_index_list.csv.zstd",
+            "relative_path": "work_index_list.csv.zstd",
+            "size": 152
+          },
+          {
+            "filename": "done_880e50a5d1d24e48023f1b5852abace1711777f4.flag",
+            "relative_path": "done_flags/done_880e50a5d1d24e48023f1b5852abace1711777f4.flag",
+            "size": 0
+          },
+          {
+            "filename": "output_880e50a5d1d24e48023f1b5852abace1711777f4.jsonl",
+            "relative_path": "results/output_880e50a5d1d24e48023f1b5852abace1711777f4.jsonl",
+            "size": 44321
+          }
+        ],
+        "total_size": 88794
+      },
+      "content_summary": {
+        "has_content": true,
+        "estimated_pages": 21,
+        "content_preview": "Efficient Estimation of Word Representations in Vector Space\n\nTomas Mikolov\nGoogle Inc., Mountain View, CA\ntmikolov@google.com\n\nKai Chen\nGoogle Inc., Mountain View, CA\nkaichen@google.com\n\nGreg Corrado\nGoogle Inc., Mountain View, CA\ngcorrado@google.com\n\nJeffrey Dean\nGoogle Inc., Mountain View, CA\njef..."
+      },
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "73a07683ffec",
+      "output_name": "LM_2016_Google_NMT_20251124",
+      "category_code": "LM",
+      "category_name": "語言模型",
+      "category_name_en": "Language_Models",
+      "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/LM/LM_2016_Google_NMT_20251124",
+      "has_metadata": true,
+      "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/03_language_models/2016_Google_NMT.pdf",
+      "processing_time": "2025-11-24T22:51:13.248291",
+      "paper_info": {
+        "year": "2016",
+        "name": "Google_NMT",
+        "original_filename": "2016_Google_NMT"
+      },
+      "output_locations": {
+        "processed_paper_dir": "outputs/processed_papers/LM/LM_2016_Google_NMT_20251124",
+        "aggregated_chunk_path": "outputs/aggregated_chunks/LM_2016_Google_NMT_20251124.jsonl"
+      },
+      "files": {
+        "jsonl_files": [
+          {
+            "filename": "LM_2016_Google_NMT_20251124.jsonl",
+            "size": 89493,
+            "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/LM/LM_2016_Google_NMT_20251124/LM_2016_Google_NMT_20251124.jsonl"
+          }
+        ],
+        "workspace_files": [
+          {
+            "filename": "work_index_list.csv.zstd",
+            "relative_path": "work_index_list.csv.zstd",
+            "size": 157
+          },
+          {
+            "filename": "done_ccfe5c6d17573c5d69d2834d9a3c734591047cb9.flag",
+            "relative_path": "done_flags/done_ccfe5c6d17573c5d69d2834d9a3c734591047cb9.flag",
+            "size": 0
+          },
+          {
+            "filename": "output_ccfe5c6d17573c5d69d2834d9a3c734591047cb9.jsonl",
+            "relative_path": "results/output_ccfe5c6d17573c5d69d2834d9a3c734591047cb9.jsonl",
+            "size": 89493
+          }
+        ],
+        "total_size": 179143
+      },
+      "content_summary": {
+        "has_content": true,
+        "estimated_pages": 42,
+        "content_preview": "Google’s Neural Machine Translation System: Bridging the Gap between Human and Machine Translation\n\nYonghui Wu, Mike Schuster, Zhifeng Chen, Quoc V. Le, Mohammad Norouzi\nyonghui,schuster,zhifengc,qvl,mnorouzi@google.com\n\nWolfgang Macherey, Maxim Krikun, Yuan Cao, Qin Gao, Klaus Macherey, Jeff Klingn..."
+      },
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "768218271145",
+      "output_name": "LM_2019_GPT_2_20251124",
+      "category_code": "LM",
+      "category_name": "語言模型",
+      "category_name_en": "Language_Models",
+      "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/LM/LM_2019_GPT_2_20251124",
+      "has_metadata": true,
+      "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/03_language_models/2019_GPT_2.pdf",
+      "processing_time": "2025-11-24T23:48:10.763291",
+      "paper_info": {
+        "year": "2019",
+        "name": "GPT_2",
+        "original_filename": "2019_GPT_2"
+      },
+      "output_locations": {
+        "processed_paper_dir": "outputs/processed_papers/LM/LM_2019_GPT_2_20251124",
+        "aggregated_chunk_path": "outputs/aggregated_chunks/LM_2019_GPT_2_20251124.jsonl"
+      },
+      "files": {
+        "jsonl_files": [
+          {
+            "filename": "LM_2019_GPT_2_20251124.jsonl",
+            "size": 102338,
+            "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/LM/LM_2019_GPT_2_20251124/LM_2019_GPT_2_20251124.jsonl"
+          }
+        ],
+        "workspace_files": [
+          {
+            "filename": "work_index_list.csv.zstd",
+            "relative_path": "work_index_list.csv.zstd",
+            "size": 152
+          },
+          {
+            "filename": "done_b388f33533588ef906b7cf1c500d7d646038c552.flag",
+            "relative_path": "done_flags/done_b388f33533588ef906b7cf1c500d7d646038c552.flag",
+            "size": 0
+          },
+          {
+            "filename": "output_b388f33533588ef906b7cf1c500d7d646038c552.jsonl",
+            "relative_path": "results/output_b388f33533588ef906b7cf1c500d7d646038c552.jsonl",
+            "size": 102338
+          }
+        ],
+        "total_size": 204828
+      },
+      "content_summary": {
+        "has_content": true,
+        "estimated_pages": 48,
+        "content_preview": "Language Models are Unsupervised Multitask Learners\n\nAlec Radford * 1  Jeffrey Wu * 1  Rewon Child 1  David Luan 1  Dario Amodei ** 1  Ilya Sutskever ** 1\n\nAbstract\n\nNatural language processing tasks, such as question answering, machine translation, reading comprehension, and summarization, are typi..."
+      },
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "3fcb34c18e64",
+      "output_name": "LM_2020_GPT_3_20251124",
+      "category_code": "LM",
+      "category_name": "語言模型",
+      "category_name_en": "Language_Models",
+      "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/LM/LM_2020_GPT_3_20251124",
+      "has_metadata": true,
+      "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/03_language_models/2020_GPT_3.pdf",
+      "processing_time": "2025-11-24T23:20:05.955649",
+      "paper_info": {
+        "year": "2020",
+        "name": "GPT_3",
+        "original_filename": "2020_GPT_3"
+      },
+      "output_locations": {
+        "processed_paper_dir": "outputs/processed_papers/LM/LM_2020_GPT_3_20251124",
+        "aggregated_chunk_path": "outputs/aggregated_chunks/LM_2020_GPT_3_20251124.jsonl"
+      },
+      "files": {
+        "jsonl_files": [
+          {
+            "filename": "LM_2020_GPT_3_20251124.jsonl",
+            "size": 271512,
+            "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/LM/LM_2020_GPT_3_20251124/LM_2020_GPT_3_20251124.jsonl"
+          }
+        ],
+        "workspace_files": [
+          {
+            "filename": "work_index_list.csv.zstd",
+            "relative_path": "work_index_list.csv.zstd",
+            "size": 151
+          },
+          {
+            "filename": "done_2ec8d6d34d863416650afda9e1d67d6be1b09510.flag",
+            "relative_path": "done_flags/done_2ec8d6d34d863416650afda9e1d67d6be1b09510.flag",
+            "size": 0
+          },
+          {
+            "filename": "output_2ec8d6d34d863416650afda9e1d67d6be1b09510.jsonl",
+            "relative_path": "results/output_2ec8d6d34d863416650afda9e1d67d6be1b09510.jsonl",
+            "size": 271512
+          }
+        ],
+        "total_size": 543175
+      },
+      "content_summary": {
+        "has_content": true,
+        "estimated_pages": 129,
+        "content_preview": "Language Models are Few-Shot Learners\n\nTom B. Brown*    Benjamin Mann*    Nick Ryder*    Melanie Subbiah*\nJared Kaplan†    Prafulla Dhariwal    Arvind Neelakantan    Pranav Shyam    Girish Sastry\nAmanda Askell    Sandhini Agarwal    Ariel Herbert-Voss    Gretchen Krueger    Tom Henighan\nRewon Child ..."
+      },
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "e270608477f4",
+      "output_name": "LM_2024_TULU_3_20251124",
+      "category_code": "LM",
+      "category_name": "語言模型",
+      "category_name_en": "Language_Models",
+      "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/LM/LM_2024_TULU_3_20251124",
+      "has_metadata": true,
+      "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/03_language_models/2024_TULU_3.pdf",
+      "processing_time": "2025-11-24T22:32:58.340572",
+      "paper_info": {
+        "year": "2024",
+        "name": "TULU_3",
+        "original_filename": "2024_TULU_3"
+      },
+      "output_locations": {
+        "processed_paper_dir": "outputs/processed_papers/LM/LM_2024_TULU_3_20251124",
+        "aggregated_chunk_path": "outputs/aggregated_chunks/LM_2024_TULU_3_20251124.jsonl"
+      },
+      "files": {
+        "jsonl_files": [
+          {
+            "filename": "LM_2024_TULU_3_20251124.jsonl",
+            "size": 69116,
+            "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/LM/LM_2024_TULU_3_20251124/LM_2024_TULU_3_20251124.jsonl"
+          }
+        ],
+        "workspace_files": [
+          {
+            "filename": "work_index_list.csv.zstd",
+            "relative_path": "work_index_list.csv.zstd",
+            "size": 154
+          },
+          {
+            "filename": "done_ab43d030dbb69ab4b5821bd095714dc47c3134e1.flag",
+            "relative_path": "done_flags/done_ab43d030dbb69ab4b5821bd095714dc47c3134e1.flag",
+            "size": 0
+          },
+          {
+            "filename": "output_ab43d030dbb69ab4b5821bd095714dc47c3134e1.jsonl",
+            "relative_path": "results/output_ab43d030dbb69ab4b5821bd095714dc47c3134e1.jsonl",
+            "size": 69116
+          }
+        ],
+        "total_size": 138386
+      },
+      "content_summary": {
+        "has_content": true,
+        "estimated_pages": 32,
+        "content_preview": "An implicit adaptive unified gas-kinetic scheme for steady-state solutions of non-equilibrium flows\n\nWenpei Longa, Yufeng Weia, Kun Xua,b,c,*\n\naDepartment of Mathematics, Hong Kong University of Science and Technology, Hong Kong, China\nbDepartment of Mechanical and Aerospace Engineering, Hong Kong U..."
+      },
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "2508f0deb51f",
+      "output_name": "LM_2018_GPT_1_20251124",
+      "category_code": "LM",
+      "category_name": "語言模型",
+      "category_name_en": "Language_Models",
+      "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/LM/LM_2018_GPT_1_20251124",
+      "has_metadata": true,
+      "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/03_language_models/2018_GPT_1.pdf",
+      "processing_time": "2025-11-24T22:46:43.315478",
+      "paper_info": {
+        "year": "2018",
+        "name": "GPT_1",
+        "original_filename": "2018_GPT_1"
+      },
+      "output_locations": {
+        "processed_paper_dir": "outputs/processed_papers/LM/LM_2018_GPT_1_20251124",
+        "aggregated_chunk_path": "outputs/aggregated_chunks/LM_2018_GPT_1_20251124.jsonl"
+      },
+      "files": {
+        "jsonl_files": [
+          {
+            "filename": "LM_2018_GPT_1_20251124.jsonl",
+            "size": 46905,
+            "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/LM/LM_2018_GPT_1_20251124/LM_2018_GPT_1_20251124.jsonl"
+          }
+        ],
+        "workspace_files": [
+          {
+            "filename": "work_index_list.csv.zstd",
+            "relative_path": "work_index_list.csv.zstd",
+            "size": 154
+          },
+          {
+            "filename": "done_3ed24bfd0d56e5a5e3e9825910fd657f786b2ee7.flag",
+            "relative_path": "done_flags/done_3ed24bfd0d56e5a5e3e9825910fd657f786b2ee7.flag",
+            "size": 0
+          },
+          {
+            "filename": "output_3ed24bfd0d56e5a5e3e9825910fd657f786b2ee7.jsonl",
+            "relative_path": "results/output_3ed24bfd0d56e5a5e3e9825910fd657f786b2ee7.jsonl",
+            "size": 46905
+          }
+        ],
+        "total_size": 93964
+      },
+      "content_summary": {
+        "has_content": true,
+        "estimated_pages": 22,
+        "content_preview": "Improving Language Understanding by Generative Pre-Training\n\nAlec Radford\nOpenAI\nalec@openai.com\n\nKarthik Narasimhan\nOpenAI\nkarthikn@openai.com\n\nTim Salimans\nOpenAI\ntim@openai.com\n\nIlya Sutskever\nOpenAI\nilyasu@openai.com\n\nAbstract\n\nNatural language understanding comprises a wide range of diverse tas..."
+      },
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "d8a0f646adc1",
+      "output_name": "MM_2020_ViT_20251124",
+      "category_code": "MM",
+      "category_name": "多模態",
+      "category_name_en": "Multimodal",
+      "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MM/MM_2020_ViT_20251124",
+      "has_metadata": true,
+      "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/04_multimodal/2020_ViT.pdf",
+      "processing_time": "2025-11-24T22:29:04.090507",
+      "paper_info": {
+        "year": "2020",
+        "name": "ViT",
+        "original_filename": "2020_ViT"
+      },
+      "output_locations": {
+        "processed_paper_dir": "outputs/processed_papers/MM/MM_2020_ViT_20251124",
+        "aggregated_chunk_path": "outputs/aggregated_chunks/MM_2020_ViT_20251124.jsonl"
+      },
+      "files": {
+        "jsonl_files": [
+          {
+            "filename": "MM_2020_ViT_20251124.jsonl",
+            "size": 74377,
+            "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MM/MM_2020_ViT_20251124/MM_2020_ViT_20251124.jsonl"
+          }
+        ],
+        "workspace_files": [
+          {
+            "filename": "work_index_list.csv.zstd",
+            "relative_path": "work_index_list.csv.zstd",
+            "size": 148
+          },
+          {
+            "filename": "done_74c1e6eeb35464b8472643dcc34ec2b2d92cd565.flag",
+            "relative_path": "done_flags/done_74c1e6eeb35464b8472643dcc34ec2b2d92cd565.flag",
+            "size": 0
+          },
+          {
+            "filename": "output_74c1e6eeb35464b8472643dcc34ec2b2d92cd565.jsonl",
+            "relative_path": "results/output_74c1e6eeb35464b8472643dcc34ec2b2d92cd565.jsonl",
+            "size": 74377
+          }
+        ],
+        "total_size": 148902
+      },
+      "content_summary": {
+        "has_content": true,
+        "estimated_pages": 35,
+        "content_preview": "AN IMAGE IS WORTH 16x16 WORDS: TRANSFORMERS FOR IMAGE RECOGNITION AT SCALE\n\nAlexey Dosovitskiy*†, Lucas Beyer*, Alexander Kolesnikov*, Dirk Weissenborn*, Xiaohua Zhai*, Thomas Unterthiner, Mostafa Dehghani, Matthias Minderer, Georg Heigold, Sylvain Gelly, Jakob Uszkoreit, Neil Houlsby*†\n*equal techn..."
+      },
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "fc3609c8bad4",
+      "output_name": "MM_2014_Two_Stream_CNN_20251124",
+      "category_code": "MM",
+      "category_name": "多模態",
+      "category_name_en": "Multimodal",
+      "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MM/MM_2014_Two_Stream_CNN_20251124",
+      "has_metadata": true,
+      "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/04_multimodal/2014_Two_Stream_CNN.pdf",
+      "processing_time": "2025-11-24T21:50:08.510644",
+      "paper_info": {
+        "year": "2014",
+        "name": "Two_Stream_CNN",
+        "original_filename": "2014_Two_Stream_CNN"
+      },
+      "output_locations": {
+        "processed_paper_dir": "outputs/processed_papers/MM/MM_2014_Two_Stream_CNN_20251124",
+        "aggregated_chunk_path": "outputs/aggregated_chunks/MM_2014_Two_Stream_CNN_20251124.jsonl"
+      },
+      "files": {
+        "jsonl_files": [
+          {
+            "filename": "MM_2014_Two_Stream_CNN_20251124.jsonl",
+            "size": 45222,
+            "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MM/MM_2014_Two_Stream_CNN_20251124/MM_2014_Two_Stream_CNN_20251124.jsonl"
+          }
+        ],
+        "workspace_files": [
+          {
+            "filename": "work_index_list.csv.zstd",
+            "relative_path": "work_index_list.csv.zstd",
+            "size": 156
+          },
+          {
+            "filename": "done_70bee60356af686cab619443d4abce13e2525e95.flag",
+            "relative_path": "done_flags/done_70bee60356af686cab619443d4abce13e2525e95.flag",
+            "size": 0
+          },
+          {
+            "filename": "output_70bee60356af686cab619443d4abce13e2525e95.jsonl",
+            "relative_path": "results/output_70bee60356af686cab619443d4abce13e2525e95.jsonl",
+            "size": 45222
+          }
+        ],
+        "total_size": 90600
+      },
+      "content_summary": {
+        "has_content": true,
+        "estimated_pages": 21,
+        "content_preview": "Two-Stream Convolutional Networks for Action Recognition in Videos\n\nKaren Simonyan        Andrew Zisserman\nVisual Geometry Group, University of Oxford\n{karen,az}@robots.ox.ac.uk\n\nAbstract\n\nWe investigate architectures of discriminatively trained deep Convolutional Networks (ConvNets) for action reco..."
+      },
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "62307436b77e",
+      "output_name": "MM_2022_Stable_Diffusion_20251124",
+      "category_code": "MM",
+      "category_name": "多模態",
+      "category_name_en": "Multimodal",
+      "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MM/MM_2022_Stable_Diffusion_20251124",
+      "has_metadata": true,
+      "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/04_multimodal/2022_Stable_Diffusion.pdf",
+      "processing_time": "2025-11-24T22:18:12.650688",
+      "paper_info": {
+        "year": "2022",
+        "name": "Stable_Diffusion",
+        "original_filename": "2022_Stable_Diffusion"
+      },
+      "output_locations": {
+        "processed_paper_dir": "outputs/processed_papers/MM/MM_2022_Stable_Diffusion_20251124",
+        "aggregated_chunk_path": "outputs/aggregated_chunks/MM_2022_Stable_Diffusion_20251124.jsonl"
+      },
+      "files": {
+        "jsonl_files": [
+          {
+            "filename": "MM_2022_Stable_Diffusion_20251124.jsonl",
+            "size": 123269,
+            "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MM/MM_2022_Stable_Diffusion_20251124/MM_2022_Stable_Diffusion_20251124.jsonl"
+          }
+        ],
+        "workspace_files": [
+          {
+            "filename": "work_index_list.csv.zstd",
+            "relative_path": "work_index_list.csv.zstd",
+            "size": 156
+          },
+          {
+            "filename": "done_3957842bca1e738537363cf0acfe3d9125e68ed4.flag",
+            "relative_path": "done_flags/done_3957842bca1e738537363cf0acfe3d9125e68ed4.flag",
+            "size": 0
+          },
+          {
+            "filename": "output_3957842bca1e738537363cf0acfe3d9125e68ed4.jsonl",
+            "relative_path": "results/output_3957842bca1e738537363cf0acfe3d9125e68ed4.jsonl",
+            "size": 123269
+          }
+        ],
+        "total_size": 246694
+      },
+      "content_summary": {
+        "has_content": true,
+        "estimated_pages": 57,
+        "content_preview": "High-Resolution Image Synthesis with Latent Diffusion Models\n\nRobin Rombach1 *    Andreas Blattmann1 *    Dominik Lorenz1    Patrick Esser®    Björn Ommer1\n1Ludwig Maximilian University of Munich & IWR, Heidelberg University, Germany    ®Runway ML\nhttps://github.com/CompVis/latent-diffusion\n\nAbstrac..."
+      },
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "180a4b58626a",
+      "output_name": "MM_2021_CLIP_20251124",
+      "category_code": "MM",
+      "category_name": "多模態",
+      "category_name_en": "Multimodal",
+      "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MM/MM_2021_CLIP_20251124",
+      "has_metadata": true,
+      "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/04_multimodal/2021_CLIP.pdf",
+      "processing_time": "2025-11-24T21:22:30.504045",
+      "paper_info": {
+        "year": "2021",
+        "name": "CLIP",
+        "original_filename": "2021_CLIP"
+      },
+      "output_locations": {
+        "processed_paper_dir": "outputs/processed_papers/MM/MM_2021_CLIP_20251124",
+        "aggregated_chunk_path": "outputs/aggregated_chunks/MM_2021_CLIP_20251124.jsonl"
+      },
+      "files": {
+        "jsonl_files": [
+          {
+            "filename": "MM_2021_CLIP_20251124.jsonl",
+            "size": 216965,
+            "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MM/MM_2021_CLIP_20251124/MM_2021_CLIP_20251124.jsonl"
+          }
+        ],
+        "workspace_files": [
+          {
+            "filename": "work_index_list.csv.zstd",
+            "relative_path": "work_index_list.csv.zstd",
+            "size": 150
+          },
+          {
+            "filename": "done_e48476557a9ac55f01696ecaaa94d35de1037d3b.flag",
+            "relative_path": "done_flags/done_e48476557a9ac55f01696ecaaa94d35de1037d3b.flag",
+            "size": 0
+          },
+          {
+            "filename": "done_3238f57dac8312ecff6fd2571e9e61ee6c62380c.flag",
+            "relative_path": "done_flags/done_3238f57dac8312ecff6fd2571e9e61ee6c62380c.flag",
+            "size": 0
+          },
+          {
+            "filename": "worker_880e50a5d1d24e48023f1b5852abace1711777f4.lock",
+            "relative_path": "worker_locks/worker_880e50a5d1d24e48023f1b5852abace1711777f4.lock",
+            "size": 0
+          },
+          {
+            "filename": "output_e48476557a9ac55f01696ecaaa94d35de1037d3b.jsonl",
+            "relative_path": "results/output_e48476557a9ac55f01696ecaaa94d35de1037d3b.jsonl",
+            "size": 41918
+          },
+          {
+            "filename": "output_3238f57dac8312ecff6fd2571e9e61ee6c62380c.jsonl",
+            "relative_path": "results/output_3238f57dac8312ecff6fd2571e9e61ee6c62380c.jsonl",
+            "size": 216965
+          }
+        ],
+        "total_size": 475998
+      },
+      "content_summary": {
+        "has_content": true,
+        "estimated_pages": 104,
+        "content_preview": "Learning Transferable Visual Models From Natural Language Supervision\n\nAlec Radford * 1 Jong Wook Kim * 1 Chris Hallacy 1 Aditya Ramesh 1 Gabriel Goh 1 Sandhini Agarwal 1 Girish Sastry 1 Amanda Askell 1 Pamela Mishkin 1 Jack Clark 1 Gretchen Krueger 1 Ilya Sutskever 1\n\nAbstract\n\nState-of-the-art com..."
+      },
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "7c63c90a6ef1",
+      "output_name": "MM_2015_GAN_20251124",
+      "category_code": "MM",
+      "category_name": "多模態",
+      "category_name_en": "Multimodal",
+      "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MM/MM_2015_GAN_20251124",
+      "has_metadata": true,
+      "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/04_multimodal/2015_GAN.pdf",
+      "processing_time": "2025-11-24T21:52:48.197807",
+      "paper_info": {
+        "year": "2015",
+        "name": "GAN",
+        "original_filename": "2015_GAN"
+      },
+      "output_locations": {
+        "processed_paper_dir": "outputs/processed_papers/MM/MM_2015_GAN_20251124",
+        "aggregated_chunk_path": "outputs/aggregated_chunks/MM_2015_GAN_20251124.jsonl"
+      },
+      "files": {
+        "jsonl_files": [
+          {
+            "filename": "MM_2015_GAN_20251124.jsonl",
+            "size": 36656,
+            "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MM/MM_2015_GAN_20251124/MM_2015_GAN_20251124.jsonl"
+          }
+        ],
+        "workspace_files": [
+          {
+            "filename": "work_index_list.csv.zstd",
+            "relative_path": "work_index_list.csv.zstd",
+            "size": 146
+          },
+          {
+            "filename": "done_de94e368e92a98c180c4e94d053a8276cff31383.flag",
+            "relative_path": "done_flags/done_de94e368e92a98c180c4e94d053a8276cff31383.flag",
+            "size": 0
+          },
+          {
+            "filename": "output_de94e368e92a98c180c4e94d053a8276cff31383.jsonl",
+            "relative_path": "results/output_de94e368e92a98c180c4e94d053a8276cff31383.jsonl",
+            "size": 36656
+          }
+        ],
+        "total_size": 73458
+      },
+      "content_summary": {
+        "has_content": true,
+        "estimated_pages": 17,
+        "content_preview": "Generative Adversarial Nets\n\nIan J. Goodfellow, Jean Pouget-Abadie*, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair†, Aaron Courville, Yoshua Bengio‡\nDépartement d’informatique et de recherche opérationnelle\nUniversité de Montréal\nMontréal, QC H3C 3J7\n\nAbstract\n\nWe propose a new framework f..."
+      },
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "c089d53822e0",
+      "output_name": "MM_2020_DDPM_20251124",
+      "category_code": "MM",
+      "category_name": "多模態",
+      "category_name_en": "Multimodal",
+      "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MM/MM_2020_DDPM_20251124",
+      "has_metadata": true,
+      "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/04_multimodal/2020_DDPM.pdf",
+      "processing_time": "2025-11-24T21:35:58.677464",
+      "paper_info": {
+        "year": "2020",
+        "name": "DDPM",
+        "original_filename": "2020_DDPM"
+      },
+      "output_locations": {
+        "processed_paper_dir": "outputs/processed_papers/MM/MM_2020_DDPM_20251124",
+        "aggregated_chunk_path": "outputs/aggregated_chunks/MM_2020_DDPM_20251124.jsonl"
+      },
+      "files": {
+        "jsonl_files": [
+          {
+            "filename": "MM_2020_DDPM_20251124.jsonl",
+            "size": 67773,
+            "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MM/MM_2020_DDPM_20251124/MM_2020_DDPM_20251124.jsonl"
+          }
+        ],
+        "workspace_files": [
+          {
+            "filename": "work_index_list.csv.zstd",
+            "relative_path": "work_index_list.csv.zstd",
+            "size": 149
+          },
+          {
+            "filename": "done_7894a96452b1da91693cc0b2c379d17fdadaffaf.flag",
+            "relative_path": "done_flags/done_7894a96452b1da91693cc0b2c379d17fdadaffaf.flag",
+            "size": 0
+          },
+          {
+            "filename": "output_7894a96452b1da91693cc0b2c379d17fdadaffaf.jsonl",
+            "relative_path": "results/output_7894a96452b1da91693cc0b2c379d17fdadaffaf.jsonl",
+            "size": 67773
+          }
+        ],
+        "total_size": 135695
+      },
+      "content_summary": {
+        "has_content": true,
+        "estimated_pages": 31,
+        "content_preview": "Denoising Diffusion Probabilistic Models\n\nJonathan Ho\nUC Berkeley\njonathanho@berkeley.edu\n\nAjay Jain\nUC Berkeley\najayj@berkeley.edu\n\nPieter Abbeel\nUC Berkeley\npabbeel@cs.berkeley.edu\n\nAbstract\n\nWe present high quality image synthesis results using diffusion probabilistic models, a class of latent va..."
+      },
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "cd855003e111",
+      "output_name": "MM_2022_DiT_20251124",
+      "category_code": "MM",
+      "category_name": "多模態",
+      "category_name_en": "Multimodal",
+      "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MM/MM_2022_DiT_20251124",
+      "has_metadata": true,
+      "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/04_multimodal/2022_DiT.pdf",
+      "processing_time": "2025-11-24T21:47:05.371428",
+      "paper_info": {
+        "year": "2022",
+        "name": "DiT",
+        "original_filename": "2022_DiT"
+      },
+      "output_locations": {
+        "processed_paper_dir": "outputs/processed_papers/MM/MM_2022_DiT_20251124",
+        "aggregated_chunk_path": "outputs/aggregated_chunks/MM_2022_DiT_20251124.jsonl"
+      },
+      "files": {
+        "jsonl_files": [
+          {
+            "filename": "MM_2022_DiT_20251124.jsonl",
+            "size": 59287,
+            "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MM/MM_2022_DiT_20251124/MM_2022_DiT_20251124.jsonl"
+          }
+        ],
+        "workspace_files": [
+          {
+            "filename": "work_index_list.csv.zstd",
+            "relative_path": "work_index_list.csv.zstd",
+            "size": 147
+          },
+          {
+            "filename": "done_4c3072a00a6b40076e953b5867c036f72bbf38db.flag",
+            "relative_path": "done_flags/done_4c3072a00a6b40076e953b5867c036f72bbf38db.flag",
+            "size": 0
+          },
+          {
+            "filename": "output_4c3072a00a6b40076e953b5867c036f72bbf38db.jsonl",
+            "relative_path": "results/output_4c3072a00a6b40076e953b5867c036f72bbf38db.jsonl",
+            "size": 59287
+          }
+        ],
+        "total_size": 118721
+      },
+      "content_summary": {
+        "has_content": true,
+        "estimated_pages": 27,
+        "content_preview": "Scalable Diffusion Models with Transformers\n\nWilliam Peebles*\nUC Berkeley\nSaining Xie\nNew York University\n\nFigure 1. Diffusion models with transformer backbones achieve state-of-the-art image quality. We show selected samples from two of our class-conditional DiT-XL/2 models trained on ImageNet at 5..."
+      },
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "1dbd9bfd5647",
+      "output_name": "MM_2014_DeepVideo_20251124",
+      "category_code": "MM",
+      "category_name": "多模態",
+      "category_name_en": "Multimodal",
+      "processed_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MM/MM_2014_DeepVideo_20251124",
+      "has_metadata": true,
+      "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/04_multimodal/2014_DeepVideo.pdf",
+      "processing_time": "2025-11-24T21:25:05.273398",
+      "paper_info": {
+        "year": "2014",
+        "name": "DeepVideo",
+        "original_filename": "2014_DeepVideo"
+      },
+      "output_locations": {
+        "processed_paper_dir": "outputs/processed_papers/MM/MM_2014_DeepVideo_20251124",
+        "aggregated_chunk_path": "outputs/aggregated_chunks/MM_2014_DeepVideo_20251124.jsonl"
+      },
+      "files": {
+        "jsonl_files": [
+          {
+            "filename": "MM_2014_DeepVideo_20251124.jsonl",
+            "size": 41927,
+            "path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/processed_papers/MM/MM_2014_DeepVideo_20251124/MM_2014_DeepVideo_20251124.jsonl"
+          }
+        ],
+        "workspace_files": [
+          {
+            "filename": "work_index_list.csv.zstd",
+            "relative_path": "work_index_list.csv.zstd",
+            "size": 150
+          },
+          {
+            "filename": "done_e48476557a9ac55f01696ecaaa94d35de1037d3b.flag",
+            "relative_path": "done_flags/done_e48476557a9ac55f01696ecaaa94d35de1037d3b.flag",
+            "size": 0
+          },
+          {
+            "filename": "output_e48476557a9ac55f01696ecaaa94d35de1037d3b.jsonl",
+            "relative_path": "results/output_e48476557a9ac55f01696ecaaa94d35de1037d3b.jsonl",
+            "size": 41927
+          }
+        ],
+        "total_size": 84004
+      },
+      "content_summary": {
+        "has_content": true,
+        "estimated_pages": 20,
+        "content_preview": "Large-scale Video Classification with Convolutional Neural Networks\n\nAndrej Karpathy1,2    George Toderici1    Sanketh Shetty1\nkarpathy@cs.stanford.edu    gtoderici@google.com    sanketh@google.com\nThomas Leung1    Rahul Sukthankar1    Li Fei-Fei2\nleungt@google.com    sukthankar@google.com    feifei..."
       },
       "has_aggregated_chunk": true
     }

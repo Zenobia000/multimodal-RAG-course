@@ -29,7 +29,7 @@ class EmbeddingAppSettings(BaseSettings):
 
     # 路徑設定
     CURRENT_DIR: Path = Path(__file__).parent
-    OLMOCR_OUTPUT_PATH: str = str(CURRENT_DIR.parent / "03-advanced-tools" / "olmocr" / "output" / "workspace")
+    OLMOCR_OUTPUT_PATH: str = str(CURRENT_DIR.parent / "03.1-papers_knowledge_base" / "outputs" / "aggregated_chunks")
 
     # 處理設定
     BATCH_SIZE: int = 50

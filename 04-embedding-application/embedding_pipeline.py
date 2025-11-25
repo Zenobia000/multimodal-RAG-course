@@ -51,7 +51,7 @@ class EmbeddingConfig(BaseSettings):
     MIN_CHUNK_SIZE: int = 50
 
     # OLMoCR 路徑設定
-    OLMOCR_OUTPUT_PATH: str = "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03-advanced-tools/olmocr/output/workspace"
+    OLMOCR_OUTPUT_PATH: str = "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base/outputs/aggregated_chunks"
 
     # 處理設定
     BATCH_SIZE: int = 50
@@ -75,13 +75,14 @@ class DocumentProcessor:
     def load_olmocr_results(self) -> List[Dict[str, Any]]:
         """載入 OLMoCR 處理結果"""
         results = []
-        results_dir = Path(self.config.OLMOCR_OUTPUT_PATH) / "results"
+        results_dir = Path(self.config.OLMOCR_OUTPUT_PATH)
 
         if not results_dir.exists():
             logger.warning(f"OLMoCR 結果目錄不存在: {results_dir}")
             return results
 
-        jsonl_files = list(results_dir.glob("output_*.jsonl"))
+        # Look for JSONL files with IF_ prefix pattern
+        jsonl_files = list(results_dir.glob("*.jsonl"))
         logger.info(f"找到 {len(jsonl_files)} 個 OLMoCR 結果文件")
 
         for jsonl_file in jsonl_files:
@@ -191,14 +192,6 @@ class VectorDBManager:
                     vectors_config=models.VectorParams(
                         size=1536,  # OpenAI text-embedding-ada-002 向量維度
                         distance=models.Distance.COSINE
-                    ),
-                    optimizers_config=models.OptimizersConfig(
-                        default_segment_number=2,
-                        max_segment_size=20000,
-                        memmap_threshold=20000,
-                        indexing_threshold=20000,
-                        flush_interval_sec=5,
-                        max_optimization_threads=1
                     )
                 )
                 logger.info("✅ 集合創建成功")
@@ -232,20 +225,9 @@ class VectorDBManager:
     def add_documents_batch(self, documents: List[Document]) -> int:
         """批量添加文檔到向量資料庫"""
         try:
-            # 過濾已存在的文檔
-            new_documents = []
-            for doc in documents:
-                doc_id = doc.metadata.get('chunk_id', '')
-                if not self.check_document_exists(doc_id):
-                    new_documents.append(doc)
-                else:
-                    logger.debug(f"文檔已存在，跳過: {doc_id}")
-
-            if not new_documents:
-                logger.info("沒有新文檔需要添加")
-                return 0
-
-            logger.info(f"準備添加 {len(new_documents)} 個新文檔")
+            # 暫時跳過重複檢查，直接添加所有文檔進行測試
+            new_documents = documents
+            logger.info(f"準備添加 {len(new_documents)} 個文檔 (跳過重複檢查)")
 
             # 使用 LangChain Qdrant 包裝器
             vector_store = Qdrant(

@@ -1,0 +1,15 @@
+{
+  "output_name": "MM_2014_Two_Stream_CNN_20251124",
+  "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/04_multimodal/2014_Two_Stream_CNN.pdf",
+  "category_code": "MM",
+  "processing_time": "2025-11-24T21:50:08.510644",
+  "paper_info": {
+    "year": "2014",
+    "name": "Two_Stream_CNN",
+    "original_filename": "2014_Two_Stream_CNN"
+  },
+  "output_locations": {
+    "processed_paper_dir": "outputs/processed_papers/MM/MM_2014_Two_Stream_CNN_20251124",
+    "aggregated_chunk_path": "outputs/aggregated_chunks/MM_2014_Two_Stream_CNN_20251124.jsonl"
+  }
+}

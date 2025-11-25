@@ -1,0 +1,20 @@
+{
+  "summary": {
+    "total_files": 1,
+    "successful": 1,
+    "failed": 0,
+    "processing_time": "0:03:42.373563",
+    "category": "MP",
+    "input_source": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/01_model_paradigm/2017_AlphaGo_Zero.pdf",
+    "output_dir": "."
+  },
+  "results": [
+    {
+      "status": "success",
+      "pdf_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/01_model_paradigm/2017_AlphaGo_Zero.pdf",
+      "output_name": "MP_2017_AlphaGo_Zero_20251125",
+      "timestamp": "2025-11-25T11:51:28.781236"
+    }
+  ],
+  "timestamp": "2025-11-25T11:51:28.781741"
+}

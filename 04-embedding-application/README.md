@@ -216,13 +216,79 @@ stats = pipeline.get_collection_stats()
    - 增加 `BATCH_SIZE`
    - 檢查網路連線
 
+## 🔍 Vector Database 檢索策略教學
+
+除了基本的 embedding pipeline 之外，本專案還包含了完整的向量檢索策略教學程式，涵蓋 2025 年最新的檢索技術。
+
+### 📚 教學內容
+
+| 分類 | 策略 | 檔案位置 |
+|------|------|----------|
+| **基礎策略** | 語義搜索、元數據過濾、混合搜索 | `vector_search_strategies_tutorial.ipynb` |
+| **高級策略** | 查詢擴展、HyDE、LLM 重排序 | 同上 |
+| **RAG 2.0** | 自適應檢索、多跳推理 | 同上 |
+| **Qdrant 特有** | Discovery API、Recommendation API | 同上 |
+
+### 🚀 使用檢索教學
+
+#### 1. 啟動 Jupyter Notebook
+```bash
+jupyter notebook vector_search_strategies_tutorial.ipynb
+```
+
+#### 2. 或運行測試腳本
+```bash
+python test_search_strategies.py
+```
+
+### 📊 當前數據狀態
+
+```
+🗄️ Qdrant 集合: olmocr_documents
+   - 總向量數量: 5,275 個
+   - 向量維度: 1536
+   - 數據來源: 學術論文 (IF_*, MM_* 系列)
+```
+
+### 🎯 檢索策略範例
+
+```python
+# 語義搜索
+semantic_search("transformer attention mechanism", limit=5)
+
+# 混合搜索 (語義 + 關鍵詞)
+hybrid_search(
+    query="neural networks",
+    keywords=["transformer", "attention"],
+    limit=5
+)
+
+# 查詢擴展
+expanded_search("deep learning", expansion_method="technical")
+
+# HyDE 檢索
+hyde_search("attention mechanisms in transformers")
+
+# 自適應檢索
+adaptive_retrieval("Compare transformer and CNN architectures")
+```
+
+### 📈 性能基準測試
+
+教學程式包含完整的檢索策略性能比較：
+- 執行時間測試
+- 檢索質量評估
+- 效率指標分析
+- 可視化結果展示
+
 ## 依賴要求
 
 - Python 3.8+
 - OpenAI API 訪問權限
 - Qdrant 向量資料庫
 - 足夠的系統記憶體（建議 4GB+）
+- Jupyter Notebook (用於交互式教學)
 
 ## 許可證
 
-此項目用於研究和開發目的。
+此項目用於研究和開發目的。# multimodal-RAG-course

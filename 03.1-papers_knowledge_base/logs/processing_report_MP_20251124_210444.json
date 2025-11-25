@@ -1,0 +1,74 @@
+{
+  "summary": {
+    "total_files": 10,
+    "successful": 9,
+    "failed": 1,
+    "processing_time": "1:18:56.129047",
+    "category": "MP",
+    "input_dir": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/01_model_paradigm",
+    "output_dir": "."
+  },
+  "results": [
+    {
+      "status": "success",
+      "pdf_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/01_model_paradigm/2017_Transformer.pdf",
+      "output_name": "MP_2017_Transformer_20251124",
+      "timestamp": "2025-11-24T19:56:54.067085"
+    },
+    {
+      "status": "success",
+      "pdf_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/01_model_paradigm/2022_Chain_of_Thought.pdf",
+      "output_name": "MP_2022_Chain_of_Thought_20251124",
+      "timestamp": "2025-11-24T20:10:16.707931"
+    },
+    {
+      "status": "success",
+      "pdf_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/01_model_paradigm/2015_ResNet.pdf",
+      "output_name": "MP_2015_ResNet_20251124",
+      "timestamp": "2025-11-24T20:23:30.152271"
+    },
+    {
+      "status": "success",
+      "pdf_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/01_model_paradigm/2021_LoRA.pdf",
+      "output_name": "MP_2021_LoRA_20251124",
+      "timestamp": "2025-11-24T20:39:56.922333"
+    },
+    {
+      "status": "error",
+      "pdf_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/01_model_paradigm/2017_AlphaGo_Zero.pdf",
+      "output_name": "MP_2017_AlphaGo_Zero_20251124",
+      "error": "未找到 results 目錄，OLMoCR 處理失敗: outputs/temp/MP_2017_AlphaGo_Zero_20251124/workspace/results"
+    },
+    {
+      "status": "success",
+      "pdf_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/01_model_paradigm/2022_ReAct.pdf",
+      "output_name": "MP_2022_ReAct_20251124",
+      "timestamp": "2025-11-24T20:45:45.141105"
+    },
+    {
+      "status": "success",
+      "pdf_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/01_model_paradigm/2012_AlexNet.pdf",
+      "output_name": "MP_2012_AlexNet_20251124",
+      "timestamp": "2025-11-24T20:48:28.274181"
+    },
+    {
+      "status": "success",
+      "pdf_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/01_model_paradigm/2014_Seq2Seq.pdf",
+      "output_name": "MP_2014_Seq2Seq_20251124",
+      "timestamp": "2025-11-24T20:50:59.721294"
+    },
+    {
+      "status": "success",
+      "pdf_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/01_model_paradigm/2015_Knowledge_Distillation.pdf",
+      "output_name": "MP_2015_Knowledge_Distillation_20251124",
+      "timestamp": "2025-11-24T20:53:27.890003"
+    },
+    {
+      "status": "success",
+      "pdf_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/01_model_paradigm/2017_MoE.pdf",
+      "output_name": "MP_2017_MoE_20251124",
+      "timestamp": "2025-11-24T21:04:44.379149"
+    }
+  ],
+  "timestamp": "2025-11-24T21:04:44.379561"
+}

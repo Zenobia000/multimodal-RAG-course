@@ -1,11 +1,131 @@
 {
   "papers_by_year": {
+    "2021": [
+      {
+        "id": "f1edae39fd88",
+        "name": "LoRA",
+        "category": "MP",
+        "output_name": "MP_2021_LoRA_20251124"
+      },
+      {
+        "id": "180a4b58626a",
+        "name": "CLIP",
+        "category": "MM",
+        "output_name": "MM_2021_CLIP_20251124"
+      }
+    ],
+    "2017": [
+      {
+        "id": "3a9a76ada62e",
+        "name": "MoE",
+        "category": "MP",
+        "output_name": "MP_2017_MoE_20251124"
+      },
+      {
+        "id": "e198c6696cdb",
+        "name": "Transformer",
+        "category": "MP",
+        "output_name": "MP_2017_Transformer_20251124"
+      }
+    ],
+    "2012": [
+      {
+        "id": "1014b4312d33",
+        "name": "AlexNet",
+        "category": "MP",
+        "output_name": "MP_2012_AlexNet_20251124"
+      }
+    ],
+    "2014": [
+      {
+        "id": "3dd7dbed0fd4",
+        "name": "Seq2Seq",
+        "category": "MP",
+        "output_name": "MP_2014_Seq2Seq_20251124"
+      },
+      {
+        "id": "fc3609c8bad4",
+        "name": "Two_Stream_CNN",
+        "category": "MM",
+        "output_name": "MM_2014_Two_Stream_CNN_20251124"
+      },
+      {
+        "id": "1dbd9bfd5647",
+        "name": "DeepVideo",
+        "category": "MM",
+        "output_name": "MM_2014_DeepVideo_20251124"
+      }
+    ],
+    "2015": [
+      {
+        "id": "96d536ac8033",
+        "name": "ResNet",
+        "category": "MP",
+        "output_name": "MP_2015_ResNet_20251124"
+      },
+      {
+        "id": "2f5e7651884b",
+        "name": "Knowledge_Distillation",
+        "category": "MP",
+        "output_name": "MP_2015_Knowledge_Distillation_20251124"
+      },
+      {
+        "id": "7c63c90a6ef1",
+        "name": "GAN",
+        "category": "MM",
+        "output_name": "MM_2015_GAN_20251124"
+      }
+    ],
+    "2022": [
+      {
+        "id": "b085b10c3104",
+        "name": "ReAct",
+        "category": "MP",
+        "output_name": "MP_2022_ReAct_20251124"
+      },
+      {
+        "id": "b0f9061a5b57",
+        "name": "Chain_of_Thought",
+        "category": "MP",
+        "output_name": "MP_2022_Chain_of_Thought_20251124"
+      },
+      {
+        "id": "e236849b5c85",
+        "name": "LAION_5B",
+        "category": "IF",
+        "output_name": "IF_2022_LAION_5B_20251124"
+      },
+      {
+        "id": "fa84f547ba5c",
+        "name": "InstructGPT",
+        "category": "LM",
+        "output_name": "LM_2022_InstructGPT_20251124"
+      },
+      {
+        "id": "62307436b77e",
+        "name": "Stable_Diffusion",
+        "category": "MM",
+        "output_name": "MM_2022_Stable_Diffusion_20251124"
+      },
+      {
+        "id": "cd855003e111",
+        "name": "DiT",
+        "category": "MM",
+        "output_name": "MM_2022_DiT_20251124"
+      }
+    ],
     "2024": [
       {
         "id": "cf9ded6ba783",
         "name": "MegaScale",
         "category": "IF",
         "output_name": "IF_2024_MegaScale_20251124"
+      },
+      {
+        "id": "e270608477f4",
+        "name": "TULU_3",
+        "category": "LM",
+        "output_name": "LM_2024_TULU_3_20251124"
       }
     ],
     "2019": [
@@ -14,6 +134,12 @@
         "name": "ZeRO",
         "category": "IF",
         "output_name": "IF_2019_ZeRO_20251124"
+      },
+      {
+        "id": "768218271145",
+        "name": "GPT_2",
+        "category": "LM",
+        "output_name": "LM_2019_GPT_2_20251124"
       }
     ],
     "2020": [
@@ -22,14 +148,24 @@
         "name": "Scaling_Laws",
         "category": "IF",
         "output_name": "IF_2020_Scaling_Laws_20251124"
-      }
-    ],
-    "2022": [
+      },
       {
-        "id": "e236849b5c85",
-        "name": "LAION_5B",
-        "category": "IF",
-        "output_name": "IF_2022_LAION_5B_20251124"
+        "id": "3fcb34c18e64",
+        "name": "GPT_3",
+        "category": "LM",
+        "output_name": "LM_2020_GPT_3_20251124"
+      },
+      {
+        "id": "d8a0f646adc1",
+        "name": "ViT",
+        "category": "MM",
+        "output_name": "MM_2020_ViT_20251124"
+      },
+      {
+        "id": "c089d53822e0",
+        "name": "DDPM",
+        "category": "MM",
+        "output_name": "MM_2020_DDPM_20251124"
       }
     ],
     "2023": [
@@ -39,9 +175,116 @@
         "category": "IF",
         "output_name": "IF_2023_RefinedWeb_20251124"
       }
+    ],
+    "2018": [
+      {
+        "id": "7a472fa03b7f",
+        "name": "BERT",
+        "category": "LM",
+        "output_name": "LM_2018_BERT_20251124"
+      },
+      {
+        "id": "2508f0deb51f",
+        "name": "GPT_1",
+        "category": "LM",
+        "output_name": "LM_2018_GPT_1_20251124"
+      }
+    ],
+    "2013": [
+      {
+        "id": "5a20066ae95e",
+        "name": "Word2Vec",
+        "category": "LM",
+        "output_name": "LM_2013_Word2Vec_20251124"
+      }
+    ],
+    "2016": [
+      {
+        "id": "73a07683ffec",
+        "name": "Google_NMT",
+        "category": "LM",
+        "output_name": "LM_2016_Google_NMT_20251124"
+      }
     ]
   },
   "papers_by_keyword": {
+    "lora": [
+      {
+        "id": "f1edae39fd88",
+        "name": "LoRA",
+        "category": "MP"
+      }
+    ],
+    "moe": [
+      {
+        "id": "3a9a76ada62e",
+        "name": "MoE",
+        "category": "MP"
+      }
+    ],
+    "alexnet": [
+      {
+        "id": "1014b4312d33",
+        "name": "AlexNet",
+        "category": "MP"
+      }
+    ],
+    "seq2seq": [
+      {
+        "id": "3dd7dbed0fd4",
+        "name": "Seq2Seq",
+        "category": "MP"
+      }
+    ],
+    "transformer": [
+      {
+        "id": "e198c6696cdb",
+        "name": "Transformer",
+        "category": "MP"
+      }
+    ],
+    "resnet": [
+      {
+        "id": "96d536ac8033",
+        "name": "ResNet",
+        "category": "MP"
+      }
+    ],
+    "react": [
+      {
+        "id": "b085b10c3104",
+        "name": "ReAct",
+        "category": "MP"
+      }
+    ],
+    "knowledge": [
+      {
+        "id": "2f5e7651884b",
+        "name": "Knowledge_Distillation",
+        "category": "MP"
+      }
+    ],
+    "distillation": [
+      {
+        "id": "2f5e7651884b",
+        "name": "Knowledge_Distillation",
+        "category": "MP"
+      }
+    ],
+    "chain": [
+      {
+        "id": "b0f9061a5b57",
+        "name": "Chain_of_Thought",
+        "category": "MP"
+      }
+    ],
+    "thought": [
+      {
+        "id": "b0f9061a5b57",
+        "name": "Chain_of_Thought",
+        "category": "MP"
+      }
+    ],
     "megascale": [
       {
         "id": "cf9ded6ba783",
@@ -83,9 +326,235 @@
         "name": "RefinedWeb",
         "category": "IF"
       }
+    ],
+    "bert": [
+      {
+        "id": "7a472fa03b7f",
+        "name": "BERT",
+        "category": "LM"
+      }
+    ],
+    "instructgpt": [
+      {
+        "id": "fa84f547ba5c",
+        "name": "InstructGPT",
+        "category": "LM"
+      }
+    ],
+    "word2vec": [
+      {
+        "id": "5a20066ae95e",
+        "name": "Word2Vec",
+        "category": "LM"
+      }
+    ],
+    "google": [
+      {
+        "id": "73a07683ffec",
+        "name": "Google_NMT",
+        "category": "LM"
+      }
+    ],
+    "nmt": [
+      {
+        "id": "73a07683ffec",
+        "name": "Google_NMT",
+        "category": "LM"
+      }
+    ],
+    "gpt": [
+      {
+        "id": "768218271145",
+        "name": "GPT_2",
+        "category": "LM"
+      },
+      {
+        "id": "3fcb34c18e64",
+        "name": "GPT_3",
+        "category": "LM"
+      },
+      {
+        "id": "2508f0deb51f",
+        "name": "GPT_1",
+        "category": "LM"
+      }
+    ],
+    "tulu": [
+      {
+        "id": "e270608477f4",
+        "name": "TULU_3",
+        "category": "LM"
+      }
+    ],
+    "vit": [
+      {
+        "id": "d8a0f646adc1",
+        "name": "ViT",
+        "category": "MM"
+      }
+    ],
+    "two": [
+      {
+        "id": "fc3609c8bad4",
+        "name": "Two_Stream_CNN",
+        "category": "MM"
+      }
+    ],
+    "stream": [
+      {
+        "id": "fc3609c8bad4",
+        "name": "Two_Stream_CNN",
+        "category": "MM"
+      }
+    ],
+    "cnn": [
+      {
+        "id": "fc3609c8bad4",
+        "name": "Two_Stream_CNN",
+        "category": "MM"
+      }
+    ],
+    "stable": [
+      {
+        "id": "62307436b77e",
+        "name": "Stable_Diffusion",
+        "category": "MM"
+      }
+    ],
+    "diffusion": [
+      {
+        "id": "62307436b77e",
+        "name": "Stable_Diffusion",
+        "category": "MM"
+      }
+    ],
+    "clip": [
+      {
+        "id": "180a4b58626a",
+        "name": "CLIP",
+        "category": "MM"
+      }
+    ],
+    "gan": [
+      {
+        "id": "7c63c90a6ef1",
+        "name": "GAN",
+        "category": "MM"
+      }
+    ],
+    "ddpm": [
+      {
+        "id": "c089d53822e0",
+        "name": "DDPM",
+        "category": "MM"
+      }
+    ],
+    "dit": [
+      {
+        "id": "cd855003e111",
+        "name": "DiT",
+        "category": "MM"
+      }
+    ],
+    "deepvideo": [
+      {
+        "id": "1dbd9bfd5647",
+        "name": "DeepVideo",
+        "category": "MM"
+      }
     ]
   },
   "all_papers": [
+    {
+      "id": "f1edae39fd88",
+      "name": "LoRA",
+      "year": "2021",
+      "category_code": "MP",
+      "category_name": "模型範式",
+      "output_name": "MP_2021_LoRA_20251124",
+      "has_content": true,
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "3a9a76ada62e",
+      "name": "MoE",
+      "year": "2017",
+      "category_code": "MP",
+      "category_name": "模型範式",
+      "output_name": "MP_2017_MoE_20251124",
+      "has_content": true,
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "1014b4312d33",
+      "name": "AlexNet",
+      "year": "2012",
+      "category_code": "MP",
+      "category_name": "模型範式",
+      "output_name": "MP_2012_AlexNet_20251124",
+      "has_content": true,
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "3dd7dbed0fd4",
+      "name": "Seq2Seq",
+      "year": "2014",
+      "category_code": "MP",
+      "category_name": "模型範式",
+      "output_name": "MP_2014_Seq2Seq_20251124",
+      "has_content": true,
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "e198c6696cdb",
+      "name": "Transformer",
+      "year": "2017",
+      "category_code": "MP",
+      "category_name": "模型範式",
+      "output_name": "MP_2017_Transformer_20251124",
+      "has_content": true,
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "96d536ac8033",
+      "name": "ResNet",
+      "year": "2015",
+      "category_code": "MP",
+      "category_name": "模型範式",
+      "output_name": "MP_2015_ResNet_20251124",
+      "has_content": true,
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "b085b10c3104",
+      "name": "ReAct",
+      "year": "2022",
+      "category_code": "MP",
+      "category_name": "模型範式",
+      "output_name": "MP_2022_ReAct_20251124",
+      "has_content": true,
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "2f5e7651884b",
+      "name": "Knowledge_Distillation",
+      "year": "2015",
+      "category_code": "MP",
+      "category_name": "模型範式",
+      "output_name": "MP_2015_Knowledge_Distillation_20251124",
+      "has_content": true,
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "b0f9061a5b57",
+      "name": "Chain_of_Thought",
+      "year": "2022",
+      "category_code": "MP",
+      "category_name": "模型範式",
+      "output_name": "MP_2022_Chain_of_Thought_20251124",
+      "has_content": true,
+      "has_aggregated_chunk": true
+    },
     {
       "id": "cf9ded6ba783",
       "name": "MegaScale",
@@ -133,6 +602,166 @@
       "category_code": "IF",
       "category_name": "基礎設施",
       "output_name": "IF_2023_RefinedWeb_20251124",
+      "has_content": true,
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "7a472fa03b7f",
+      "name": "BERT",
+      "year": "2018",
+      "category_code": "LM",
+      "category_name": "語言模型",
+      "output_name": "LM_2018_BERT_20251124",
+      "has_content": true,
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "fa84f547ba5c",
+      "name": "InstructGPT",
+      "year": "2022",
+      "category_code": "LM",
+      "category_name": "語言模型",
+      "output_name": "LM_2022_InstructGPT_20251124",
+      "has_content": true,
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "5a20066ae95e",
+      "name": "Word2Vec",
+      "year": "2013",
+      "category_code": "LM",
+      "category_name": "語言模型",
+      "output_name": "LM_2013_Word2Vec_20251124",
+      "has_content": true,
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "73a07683ffec",
+      "name": "Google_NMT",
+      "year": "2016",
+      "category_code": "LM",
+      "category_name": "語言模型",
+      "output_name": "LM_2016_Google_NMT_20251124",
+      "has_content": true,
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "768218271145",
+      "name": "GPT_2",
+      "year": "2019",
+      "category_code": "LM",
+      "category_name": "語言模型",
+      "output_name": "LM_2019_GPT_2_20251124",
+      "has_content": true,
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "3fcb34c18e64",
+      "name": "GPT_3",
+      "year": "2020",
+      "category_code": "LM",
+      "category_name": "語言模型",
+      "output_name": "LM_2020_GPT_3_20251124",
+      "has_content": true,
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "e270608477f4",
+      "name": "TULU_3",
+      "year": "2024",
+      "category_code": "LM",
+      "category_name": "語言模型",
+      "output_name": "LM_2024_TULU_3_20251124",
+      "has_content": true,
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "2508f0deb51f",
+      "name": "GPT_1",
+      "year": "2018",
+      "category_code": "LM",
+      "category_name": "語言模型",
+      "output_name": "LM_2018_GPT_1_20251124",
+      "has_content": true,
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "d8a0f646adc1",
+      "name": "ViT",
+      "year": "2020",
+      "category_code": "MM",
+      "category_name": "多模態",
+      "output_name": "MM_2020_ViT_20251124",
+      "has_content": true,
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "fc3609c8bad4",
+      "name": "Two_Stream_CNN",
+      "year": "2014",
+      "category_code": "MM",
+      "category_name": "多模態",
+      "output_name": "MM_2014_Two_Stream_CNN_20251124",
+      "has_content": true,
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "62307436b77e",
+      "name": "Stable_Diffusion",
+      "year": "2022",
+      "category_code": "MM",
+      "category_name": "多模態",
+      "output_name": "MM_2022_Stable_Diffusion_20251124",
+      "has_content": true,
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "180a4b58626a",
+      "name": "CLIP",
+      "year": "2021",
+      "category_code": "MM",
+      "category_name": "多模態",
+      "output_name": "MM_2021_CLIP_20251124",
+      "has_content": true,
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "7c63c90a6ef1",
+      "name": "GAN",
+      "year": "2015",
+      "category_code": "MM",
+      "category_name": "多模態",
+      "output_name": "MM_2015_GAN_20251124",
+      "has_content": true,
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "c089d53822e0",
+      "name": "DDPM",
+      "year": "2020",
+      "category_code": "MM",
+      "category_name": "多模態",
+      "output_name": "MM_2020_DDPM_20251124",
+      "has_content": true,
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "cd855003e111",
+      "name": "DiT",
+      "year": "2022",
+      "category_code": "MM",
+      "category_name": "多模態",
+      "output_name": "MM_2022_DiT_20251124",
+      "has_content": true,
+      "has_aggregated_chunk": true
+    },
+    {
+      "id": "1dbd9bfd5647",
+      "name": "DeepVideo",
+      "year": "2014",
+      "category_code": "MM",
+      "category_name": "多模態",
+      "output_name": "MM_2014_DeepVideo_20251124",
       "has_content": true,
       "has_aggregated_chunk": true
     }

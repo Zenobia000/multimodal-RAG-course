@@ -1,9 +1,98 @@
 {
+  "MP": {
+    "name": "模型範式",
+    "name_en": "Model_Paradigm",
+    "paper_count": 9,
+    "total_size": 1329680,
+    "papers": [
+      {
+        "id": "f1edae39fd88",
+        "output_name": "MP_2021_LoRA_20251124",
+        "year": "2021",
+        "name": "LoRA",
+        "has_content": true,
+        "estimated_pages": 46,
+        "has_aggregated_chunk": true
+      },
+      {
+        "id": "3a9a76ada62e",
+        "output_name": "MP_2017_MoE_20251124",
+        "year": "2017",
+        "name": "MoE",
+        "has_content": true,
+        "estimated_pages": 35,
+        "has_aggregated_chunk": true
+      },
+      {
+        "id": "1014b4312d33",
+        "output_name": "MP_2012_AlexNet_20251124",
+        "year": "2012",
+        "name": "AlexNet",
+        "has_content": true,
+        "estimated_pages": 18,
+        "has_aggregated_chunk": true
+      },
+      {
+        "id": "3dd7dbed0fd4",
+        "output_name": "MP_2014_Seq2Seq_20251124",
+        "year": "2014",
+        "name": "Seq2Seq",
+        "has_content": true,
+        "estimated_pages": 17,
+        "has_aggregated_chunk": true
+      },
+      {
+        "id": "e198c6696cdb",
+        "output_name": "MP_2017_Transformer_20251124",
+        "year": "2017",
+        "name": "Transformer",
+        "has_content": true,
+        "estimated_pages": 20,
+        "has_aggregated_chunk": true
+      },
+      {
+        "id": "96d536ac8033",
+        "output_name": "MP_2015_ResNet_20251124",
+        "year": "2015",
+        "name": "ResNet",
+        "has_content": true,
+        "estimated_pages": 30,
+        "has_aggregated_chunk": true
+      },
+      {
+        "id": "b085b10c3104",
+        "output_name": "MP_2022_ReAct_20251124",
+        "year": "2022",
+        "name": "ReAct",
+        "has_content": true,
+        "estimated_pages": 57,
+        "has_aggregated_chunk": true
+      },
+      {
+        "id": "2f5e7651884b",
+        "output_name": "MP_2015_Knowledge_Distillation_20251124",
+        "year": "2015",
+        "name": "Knowledge_Distillation",
+        "has_content": true,
+        "estimated_pages": 17,
+        "has_aggregated_chunk": true
+      },
+      {
+        "id": "b0f9061a5b57",
+        "output_name": "MP_2022_Chain_of_Thought_20251124",
+        "year": "2022",
+        "name": "Chain_of_Thought",
+        "has_content": true,
+        "estimated_pages": 70,
+        "has_aggregated_chunk": true
+      }
+    ]
+  },
   "IF": {
     "name": "基礎設施",
     "name_en": "Infrastructure",
     "paper_count": 5,
-    "total_size": 1057157,
+    "total_size": 1059553,
     "papers": [
       {
         "id": "cf9ded6ba783",
@@ -20,7 +109,7 @@
         "year": "2019",
         "name": "ZeRO",
         "has_content": true,
-        "estimated_pages": 36,
+        "estimated_pages": 37,
         "has_aggregated_chunk": true
       },
       {
@@ -48,6 +137,166 @@
         "name": "RefinedWeb",
         "has_content": true,
         "estimated_pages": 63,
+        "has_aggregated_chunk": true
+      }
+    ]
+  },
+  "LM": {
+    "name": "語言模型",
+    "name_en": "Language_Models",
+    "paper_count": 8,
+    "total_size": 1799031,
+    "papers": [
+      {
+        "id": "7a472fa03b7f",
+        "output_name": "LM_2018_BERT_20251124",
+        "year": "2018",
+        "name": "BERT",
+        "has_content": true,
+        "estimated_pages": 34,
+        "has_aggregated_chunk": true
+      },
+      {
+        "id": "fa84f547ba5c",
+        "output_name": "LM_2022_InstructGPT_20251124",
+        "year": "2022",
+        "name": "InstructGPT",
+        "has_content": true,
+        "estimated_pages": 96,
+        "has_aggregated_chunk": true
+      },
+      {
+        "id": "5a20066ae95e",
+        "output_name": "LM_2013_Word2Vec_20251124",
+        "year": "2013",
+        "name": "Word2Vec",
+        "has_content": true,
+        "estimated_pages": 21,
+        "has_aggregated_chunk": true
+      },
+      {
+        "id": "73a07683ffec",
+        "output_name": "LM_2016_Google_NMT_20251124",
+        "year": "2016",
+        "name": "Google_NMT",
+        "has_content": true,
+        "estimated_pages": 42,
+        "has_aggregated_chunk": true
+      },
+      {
+        "id": "768218271145",
+        "output_name": "LM_2019_GPT_2_20251124",
+        "year": "2019",
+        "name": "GPT_2",
+        "has_content": true,
+        "estimated_pages": 48,
+        "has_aggregated_chunk": true
+      },
+      {
+        "id": "3fcb34c18e64",
+        "output_name": "LM_2020_GPT_3_20251124",
+        "year": "2020",
+        "name": "GPT_3",
+        "has_content": true,
+        "estimated_pages": 129,
+        "has_aggregated_chunk": true
+      },
+      {
+        "id": "e270608477f4",
+        "output_name": "LM_2024_TULU_3_20251124",
+        "year": "2024",
+        "name": "TULU_3",
+        "has_content": true,
+        "estimated_pages": 32,
+        "has_aggregated_chunk": true
+      },
+      {
+        "id": "2508f0deb51f",
+        "output_name": "LM_2018_GPT_1_20251124",
+        "year": "2018",
+        "name": "GPT_1",
+        "has_content": true,
+        "estimated_pages": 22,
+        "has_aggregated_chunk": true
+      }
+    ]
+  },
+  "MM": {
+    "name": "多模態",
+    "name_en": "Multimodal",
+    "paper_count": 8,
+    "total_size": 1374072,
+    "papers": [
+      {
+        "id": "d8a0f646adc1",
+        "output_name": "MM_2020_ViT_20251124",
+        "year": "2020",
+        "name": "ViT",
+        "has_content": true,
+        "estimated_pages": 35,
+        "has_aggregated_chunk": true
+      },
+      {
+        "id": "fc3609c8bad4",
+        "output_name": "MM_2014_Two_Stream_CNN_20251124",
+        "year": "2014",
+        "name": "Two_Stream_CNN",
+        "has_content": true,
+        "estimated_pages": 21,
+        "has_aggregated_chunk": true
+      },
+      {
+        "id": "62307436b77e",
+        "output_name": "MM_2022_Stable_Diffusion_20251124",
+        "year": "2022",
+        "name": "Stable_Diffusion",
+        "has_content": true,
+        "estimated_pages": 57,
+        "has_aggregated_chunk": true
+      },
+      {
+        "id": "180a4b58626a",
+        "output_name": "MM_2021_CLIP_20251124",
+        "year": "2021",
+        "name": "CLIP",
+        "has_content": true,
+        "estimated_pages": 104,
+        "has_aggregated_chunk": true
+      },
+      {
+        "id": "7c63c90a6ef1",
+        "output_name": "MM_2015_GAN_20251124",
+        "year": "2015",
+        "name": "GAN",
+        "has_content": true,
+        "estimated_pages": 17,
+        "has_aggregated_chunk": true
+      },
+      {
+        "id": "c089d53822e0",
+        "output_name": "MM_2020_DDPM_20251124",
+        "year": "2020",
+        "name": "DDPM",
+        "has_content": true,
+        "estimated_pages": 31,
+        "has_aggregated_chunk": true
+      },
+      {
+        "id": "cd855003e111",
+        "output_name": "MM_2022_DiT_20251124",
+        "year": "2022",
+        "name": "DiT",
+        "has_content": true,
+        "estimated_pages": 27,
+        "has_aggregated_chunk": true
+      },
+      {
+        "id": "1dbd9bfd5647",
+        "output_name": "MM_2014_DeepVideo_20251124",
+        "year": "2014",
+        "name": "DeepVideo",
+        "has_content": true,
+        "estimated_pages": 20,
         "has_aggregated_chunk": true
       }
     ]
