@@ -1,0 +1,780 @@
+{
+  "timestamp": "2025-11-25T09:42:38.475081",
+  "base_directory": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/multimodel-RAG/03.1-papers_knowledge_base",
+  "architecture_version": "2.0",
+  "checks": {
+    "directory_structure": {
+      "base_exists": true,
+      "outputs_structure": {
+        "outputs": true,
+        "processed_papers": true,
+        "aggregated_chunks": true,
+        "indices": true,
+        "logs": true,
+        "temp": true,
+        "embeddings": true
+      },
+      "category_dirs": {
+        "MP": {
+          "exists": true,
+          "name": "模型範式"
+        },
+        "IF": {
+          "exists": true,
+          "name": "基礎設施"
+        },
+        "LM": {
+          "exists": true,
+          "name": "語言模型"
+        },
+        "MM": {
+          "exists": true,
+          "name": "多模態"
+        }
+      }
+    },
+    "source_coverage": {
+      "categories": {
+        "MP": {
+          "source_count": 10,
+          "processed_count": 9,
+          "aggregated_count": 9,
+          "coverage_rate": 0.9,
+          "source_files": [
+            "2017_Transformer.pdf",
+            "2022_Chain_of_Thought.pdf",
+            "2015_ResNet.pdf",
+            "2021_LoRA.pdf",
+            "2017_AlphaGo_Zero.pdf",
+            "2022_ReAct.pdf",
+            "2012_AlexNet.pdf",
+            "2014_Seq2Seq.pdf",
+            "2015_Knowledge_Distillation.pdf",
+            "2017_MoE.pdf"
+          ],
+          "processed_files": [
+            "MP_2021_LoRA_20251124",
+            "MP_2017_MoE_20251124",
+            "MP_2012_AlexNet_20251124",
+            "MP_2014_Seq2Seq_20251124",
+            "MP_2017_Transformer_20251124",
+            "MP_2015_ResNet_20251124",
+            "MP_2022_ReAct_20251124",
+            "MP_2015_Knowledge_Distillation_20251124",
+            "MP_2022_Chain_of_Thought_20251124"
+          ],
+          "aggregated_files": [
+            "MP_2017_Transformer_20251124.jsonl",
+            "MP_2022_ReAct_20251124.jsonl",
+            "MP_2022_Chain_of_Thought_20251124.jsonl",
+            "MP_2017_MoE_20251124.jsonl",
+            "MP_2012_AlexNet_20251124.jsonl",
+            "MP_2015_ResNet_20251124.jsonl",
+            "MP_2021_LoRA_20251124.jsonl",
+            "MP_2014_Seq2Seq_20251124.jsonl",
+            "MP_2015_Knowledge_Distillation_20251124.jsonl"
+          ]
+        },
+        "IF": {
+          "source_count": 5,
+          "processed_count": 5,
+          "aggregated_count": 5,
+          "coverage_rate": 1.0,
+          "source_files": [
+            "2022_LAION_5B.pdf",
+            "2023_RefinedWeb.pdf",
+            "2020_Scaling_Laws.pdf",
+            "2019_ZeRO.pdf",
+            "2024_MegaScale.pdf"
+          ],
+          "processed_files": [
+            "IF_2024_MegaScale_20251124",
+            "IF_2019_ZeRO_20251124",
+            "IF_2020_Scaling_Laws_20251124",
+            "IF_2022_LAION_5B_20251124",
+            "IF_2023_RefinedWeb_20251124"
+          ],
+          "aggregated_files": [
+            "IF_2020_Scaling_Laws_20251124.jsonl",
+            "IF_2023_RefinedWeb_20251124.jsonl",
+            "IF_2022_LAION_5B_20251124.jsonl",
+            "IF_2019_ZeRO_20251124.jsonl",
+            "IF_2024_MegaScale_20251124.jsonl"
+          ]
+        },
+        "LM": {
+          "source_count": 8,
+          "processed_count": 8,
+          "aggregated_count": 8,
+          "coverage_rate": 1.0,
+          "source_files": [
+            "2024_TULU_3.pdf",
+            "2013_Word2Vec.pdf",
+            "2018_GPT_1.pdf",
+            "2016_Google_NMT.pdf",
+            "2018_BERT.pdf",
+            "2020_GPT_3.pdf",
+            "2022_InstructGPT.pdf",
+            "2019_GPT_2.pdf"
+          ],
+          "processed_files": [
+            "LM_2018_BERT_20251124",
+            "LM_2022_InstructGPT_20251124",
+            "LM_2013_Word2Vec_20251124",
+            "LM_2016_Google_NMT_20251124",
+            "LM_2019_GPT_2_20251124",
+            "LM_2020_GPT_3_20251124",
+            "LM_2024_TULU_3_20251124",
+            "LM_2018_GPT_1_20251124"
+          ],
+          "aggregated_files": [
+            "LM_2016_Google_NMT_20251124.jsonl",
+            "LM_2022_InstructGPT_20251124.jsonl",
+            "LM_2013_Word2Vec_20251124.jsonl",
+            "LM_2018_GPT_1_20251124.jsonl",
+            "LM_2024_TULU_3_20251124.jsonl",
+            "LM_2018_BERT_20251124.jsonl",
+            "LM_2019_GPT_2_20251124.jsonl",
+            "LM_2020_GPT_3_20251124.jsonl"
+          ]
+        },
+        "MM": {
+          "source_count": 8,
+          "processed_count": 8,
+          "aggregated_count": 8,
+          "coverage_rate": 1.0,
+          "source_files": [
+            "2021_CLIP.pdf",
+            "2014_DeepVideo.pdf",
+            "2020_DDPM.pdf",
+            "2022_DiT.pdf",
+            "2014_Two_Stream_CNN.pdf",
+            "2015_GAN.pdf",
+            "2022_Stable_Diffusion.pdf",
+            "2020_ViT.pdf"
+          ],
+          "processed_files": [
+            "MM_2020_ViT_20251124",
+            "MM_2014_Two_Stream_CNN_20251124",
+            "MM_2022_Stable_Diffusion_20251124",
+            "MM_2021_CLIP_20251124",
+            "MM_2015_GAN_20251124",
+            "MM_2020_DDPM_20251124",
+            "MM_2022_DiT_20251124",
+            "MM_2014_DeepVideo_20251124"
+          ],
+          "aggregated_files": [
+            "MM_2020_DDPM_20251124.jsonl",
+            "MM_2022_DiT_20251124.jsonl",
+            "MM_2020_ViT_20251124.jsonl",
+            "MM_2022_Stable_Diffusion_20251124.jsonl",
+            "MM_2015_GAN_20251124.jsonl",
+            "MM_2014_Two_Stream_CNN_20251124.jsonl",
+            "MM_2014_DeepVideo_20251124.jsonl",
+            "MM_2021_CLIP_20251124.jsonl"
+          ]
+        }
+      },
+      "overall": {
+        "total_source": 31,
+        "total_processed": 30,
+        "total_aggregated": 30,
+        "processed_coverage": 0.967741935483871,
+        "aggregated_coverage": 0.967741935483871
+      },
+      "aggregated_chunks": {
+        "total_files": 30,
+        "total_size": 2757856,
+        "files": [
+          "MM_2020_DDPM_20251124.jsonl",
+          "LM_2016_Google_NMT_20251124.jsonl",
+          "MP_2017_Transformer_20251124.jsonl",
+          "MM_2022_DiT_20251124.jsonl",
+          "MP_2022_ReAct_20251124.jsonl",
+          "IF_2020_Scaling_Laws_20251124.jsonl",
+          "LM_2022_InstructGPT_20251124.jsonl",
+          "MP_2022_Chain_of_Thought_20251124.jsonl",
+          "MM_2020_ViT_20251124.jsonl",
+          "LM_2013_Word2Vec_20251124.jsonl",
+          "MM_2022_Stable_Diffusion_20251124.jsonl",
+          "MM_2015_GAN_20251124.jsonl",
+          "MP_2017_MoE_20251124.jsonl",
+          "LM_2018_GPT_1_20251124.jsonl",
+          "LM_2024_TULU_3_20251124.jsonl",
+          "IF_2023_RefinedWeb_20251124.jsonl",
+          "LM_2018_BERT_20251124.jsonl",
+          "MP_2012_AlexNet_20251124.jsonl",
+          "MM_2014_Two_Stream_CNN_20251124.jsonl",
+          "MP_2015_ResNet_20251124.jsonl",
+          "LM_2019_GPT_2_20251124.jsonl",
+          "MP_2021_LoRA_20251124.jsonl",
+          "IF_2022_LAION_5B_20251124.jsonl",
+          "MM_2014_DeepVideo_20251124.jsonl",
+          "MP_2014_Seq2Seq_20251124.jsonl",
+          "IF_2019_ZeRO_20251124.jsonl",
+          "LM_2020_GPT_3_20251124.jsonl",
+          "MP_2015_Knowledge_Distillation_20251124.jsonl",
+          "MM_2021_CLIP_20251124.jsonl",
+          "IF_2024_MegaScale_20251124.jsonl"
+        ]
+      }
+    },
+    "file_integrity": {
+      "categories": {
+        "MP": {
+          "processed_items": [
+            "MP_2021_LoRA_20251124",
+            "MP_2017_MoE_20251124",
+            "MP_2012_AlexNet_20251124",
+            "MP_2014_Seq2Seq_20251124",
+            "MP_2017_Transformer_20251124",
+            "MP_2015_ResNet_20251124",
+            "MP_2022_ReAct_20251124",
+            "MP_2015_Knowledge_Distillation_20251124",
+            "MP_2022_Chain_of_Thought_20251124"
+          ],
+          "missing_metadata": [],
+          "empty_items": [],
+          "valid_items": [
+            "MP_2021_LoRA_20251124",
+            "MP_2017_MoE_20251124",
+            "MP_2012_AlexNet_20251124",
+            "MP_2014_Seq2Seq_20251124",
+            "MP_2017_Transformer_20251124",
+            "MP_2015_ResNet_20251124",
+            "MP_2022_ReAct_20251124",
+            "MP_2015_Knowledge_Distillation_20251124",
+            "MP_2022_Chain_of_Thought_20251124"
+          ],
+          "missing_aggregated": []
+        },
+        "IF": {
+          "processed_items": [
+            "IF_2024_MegaScale_20251124",
+            "IF_2019_ZeRO_20251124",
+            "IF_2020_Scaling_Laws_20251124",
+            "IF_2022_LAION_5B_20251124",
+            "IF_2023_RefinedWeb_20251124"
+          ],
+          "missing_metadata": [],
+          "empty_items": [],
+          "valid_items": [
+            "IF_2024_MegaScale_20251124",
+            "IF_2019_ZeRO_20251124",
+            "IF_2020_Scaling_Laws_20251124",
+            "IF_2022_LAION_5B_20251124",
+            "IF_2023_RefinedWeb_20251124"
+          ],
+          "missing_aggregated": []
+        },
+        "LM": {
+          "processed_items": [
+            "LM_2018_BERT_20251124",
+            "LM_2022_InstructGPT_20251124",
+            "LM_2013_Word2Vec_20251124",
+            "LM_2016_Google_NMT_20251124",
+            "LM_2019_GPT_2_20251124",
+            "LM_2020_GPT_3_20251124",
+            "LM_2024_TULU_3_20251124",
+            "LM_2018_GPT_1_20251124"
+          ],
+          "missing_metadata": [],
+          "empty_items": [],
+          "valid_items": [
+            "LM_2018_BERT_20251124",
+            "LM_2022_InstructGPT_20251124",
+            "LM_2013_Word2Vec_20251124",
+            "LM_2016_Google_NMT_20251124",
+            "LM_2019_GPT_2_20251124",
+            "LM_2020_GPT_3_20251124",
+            "LM_2024_TULU_3_20251124",
+            "LM_2018_GPT_1_20251124"
+          ],
+          "missing_aggregated": []
+        },
+        "MM": {
+          "processed_items": [
+            "MM_2020_ViT_20251124",
+            "MM_2014_Two_Stream_CNN_20251124",
+            "MM_2022_Stable_Diffusion_20251124",
+            "MM_2021_CLIP_20251124",
+            "MM_2015_GAN_20251124",
+            "MM_2020_DDPM_20251124",
+            "MM_2022_DiT_20251124",
+            "MM_2014_DeepVideo_20251124"
+          ],
+          "missing_metadata": [],
+          "empty_items": [],
+          "valid_items": [
+            "MM_2020_ViT_20251124",
+            "MM_2014_Two_Stream_CNN_20251124",
+            "MM_2022_Stable_Diffusion_20251124",
+            "MM_2021_CLIP_20251124",
+            "MM_2015_GAN_20251124",
+            "MM_2020_DDPM_20251124",
+            "MM_2022_DiT_20251124",
+            "MM_2014_DeepVideo_20251124"
+          ],
+          "missing_aggregated": []
+        }
+      },
+      "aggregated_chunks": {
+        "total_files": 30,
+        "orphan_files": []
+      },
+      "issues": []
+    },
+    "content_quality": {
+      "categories": {
+        "MP": {
+          "papers": [
+            {
+              "name": "MP_2021_LoRA_20251124",
+              "has_content": true,
+              "content_size": 93994,
+              "file_count": 9,
+              "has_jsonl": true,
+              "has_workspace": true,
+              "has_metadata": true
+            },
+            {
+              "name": "MP_2017_MoE_20251124",
+              "has_content": true,
+              "content_size": 71212,
+              "file_count": 9,
+              "has_jsonl": true,
+              "has_workspace": true,
+              "has_metadata": true
+            },
+            {
+              "name": "MP_2012_AlexNet_20251124",
+              "has_content": true,
+              "content_size": 37795,
+              "file_count": 9,
+              "has_jsonl": true,
+              "has_workspace": true,
+              "has_metadata": true
+            },
+            {
+              "name": "MP_2014_Seq2Seq_20251124",
+              "has_content": true,
+              "content_size": 34959,
+              "file_count": 9,
+              "has_jsonl": true,
+              "has_workspace": true,
+              "has_metadata": true
+            },
+            {
+              "name": "MP_2017_Transformer_20251124",
+              "has_content": true,
+              "content_size": 41774,
+              "file_count": 9,
+              "has_jsonl": true,
+              "has_workspace": true,
+              "has_metadata": true
+            },
+            {
+              "name": "MP_2015_ResNet_20251124",
+              "has_content": true,
+              "content_size": 60794,
+              "file_count": 9,
+              "has_jsonl": true,
+              "has_workspace": true,
+              "has_metadata": true
+            },
+            {
+              "name": "MP_2022_ReAct_20251124",
+              "has_content": true,
+              "content_size": 114481,
+              "file_count": 9,
+              "has_jsonl": true,
+              "has_workspace": true,
+              "has_metadata": true
+            },
+            {
+              "name": "MP_2015_Knowledge_Distillation_20251124",
+              "has_content": true,
+              "content_size": 35985,
+              "file_count": 9,
+              "has_jsonl": true,
+              "has_workspace": true,
+              "has_metadata": true
+            },
+            {
+              "name": "MP_2022_Chain_of_Thought_20251124",
+              "has_content": true,
+              "content_size": 140948,
+              "file_count": 9,
+              "has_jsonl": true,
+              "has_workspace": true,
+              "has_metadata": true
+            }
+          ],
+          "content_stats": {
+            "count": 9,
+            "with_content": 9,
+            "total_size": 631942
+          }
+        },
+        "IF": {
+          "papers": [
+            {
+              "name": "IF_2024_MegaScale_20251124",
+              "has_content": true,
+              "content_size": 77318,
+              "file_count": 9,
+              "has_jsonl": true,
+              "has_workspace": true,
+              "has_metadata": true
+            },
+            {
+              "name": "IF_2019_ZeRO_20251124",
+              "has_content": true,
+              "content_size": 74954,
+              "file_count": 9,
+              "has_jsonl": true,
+              "has_workspace": true,
+              "has_metadata": true
+            },
+            {
+              "name": "IF_2020_Scaling_Laws_20251124",
+              "has_content": true,
+              "content_size": 94477,
+              "file_count": 9,
+              "has_jsonl": true,
+              "has_workspace": true,
+              "has_metadata": true
+            },
+            {
+              "name": "IF_2022_LAION_5B_20251124",
+              "has_content": true,
+              "content_size": 132442,
+              "file_count": 12,
+              "has_jsonl": true,
+              "has_workspace": true,
+              "has_metadata": true
+            },
+            {
+              "name": "IF_2023_RefinedWeb_20251124",
+              "has_content": true,
+              "content_size": 126544,
+              "file_count": 9,
+              "has_jsonl": true,
+              "has_workspace": true,
+              "has_metadata": true
+            }
+          ],
+          "content_stats": {
+            "count": 5,
+            "with_content": 5,
+            "total_size": 505735
+          }
+        },
+        "LM": {
+          "papers": [
+            {
+              "name": "LM_2018_BERT_20251124",
+              "has_content": true,
+              "content_size": 68239,
+              "file_count": 9,
+              "has_jsonl": true,
+              "has_workspace": true,
+              "has_metadata": true
+            },
+            {
+              "name": "LM_2022_InstructGPT_20251124",
+              "has_content": true,
+              "content_size": 193896,
+              "file_count": 9,
+              "has_jsonl": true,
+              "has_workspace": true,
+              "has_metadata": true
+            },
+            {
+              "name": "LM_2013_Word2Vec_20251124",
+              "has_content": true,
+              "content_size": 42233,
+              "file_count": 9,
+              "has_jsonl": true,
+              "has_workspace": true,
+              "has_metadata": true
+            },
+            {
+              "name": "LM_2016_Google_NMT_20251124",
+              "has_content": true,
+              "content_size": 84928,
+              "file_count": 9,
+              "has_jsonl": true,
+              "has_workspace": true,
+              "has_metadata": true
+            },
+            {
+              "name": "LM_2019_GPT_2_20251124",
+              "has_content": true,
+              "content_size": 97999,
+              "file_count": 9,
+              "has_jsonl": true,
+              "has_workspace": true,
+              "has_metadata": true
+            },
+            {
+              "name": "LM_2020_GPT_3_20251124",
+              "has_content": true,
+              "content_size": 258131,
+              "file_count": 9,
+              "has_jsonl": true,
+              "has_workspace": true,
+              "has_metadata": true
+            },
+            {
+              "name": "LM_2024_TULU_3_20251124",
+              "has_content": true,
+              "content_size": 64726,
+              "file_count": 9,
+              "has_jsonl": true,
+              "has_workspace": true,
+              "has_metadata": true
+            },
+            {
+              "name": "LM_2018_GPT_1_20251124",
+              "has_content": true,
+              "content_size": 44879,
+              "file_count": 9,
+              "has_jsonl": true,
+              "has_workspace": true,
+              "has_metadata": true
+            }
+          ],
+          "content_stats": {
+            "count": 8,
+            "with_content": 8,
+            "total_size": 855031
+          }
+        },
+        "MM": {
+          "papers": [
+            {
+              "name": "MM_2020_ViT_20251124",
+              "has_content": true,
+              "content_size": 70780,
+              "file_count": 9,
+              "has_jsonl": true,
+              "has_workspace": true,
+              "has_metadata": true
+            },
+            {
+              "name": "MM_2014_Two_Stream_CNN_20251124",
+              "has_content": true,
+              "content_size": 43298,
+              "file_count": 9,
+              "has_jsonl": true,
+              "has_workspace": true,
+              "has_metadata": true
+            },
+            {
+              "name": "MM_2022_Stable_Diffusion_20251124",
+              "has_content": true,
+              "content_size": 114721,
+              "file_count": 9,
+              "has_jsonl": true,
+              "has_workspace": true,
+              "has_metadata": true
+            },
+            {
+              "name": "MM_2021_CLIP_20251124",
+              "has_content": true,
+              "content_size": 208881,
+              "file_count": 12,
+              "has_jsonl": true,
+              "has_workspace": true,
+              "has_metadata": true
+            },
+            {
+              "name": "MM_2015_GAN_20251124",
+              "has_content": true,
+              "content_size": 34461,
+              "file_count": 9,
+              "has_jsonl": true,
+              "has_workspace": true,
+              "has_metadata": true
+            },
+            {
+              "name": "MM_2020_DDPM_20251124",
+              "has_content": true,
+              "content_size": 63278,
+              "file_count": 9,
+              "has_jsonl": true,
+              "has_workspace": true,
+              "has_metadata": true
+            },
+            {
+              "name": "MM_2022_DiT_20251124",
+              "has_content": true,
+              "content_size": 55058,
+              "file_count": 9,
+              "has_jsonl": true,
+              "has_workspace": true,
+              "has_metadata": true
+            },
+            {
+              "name": "MM_2014_DeepVideo_20251124",
+              "has_content": true,
+              "content_size": 40397,
+              "file_count": 9,
+              "has_jsonl": true,
+              "has_workspace": true,
+              "has_metadata": true
+            }
+          ],
+          "content_stats": {
+            "count": 8,
+            "with_content": 8,
+            "total_size": 630874
+          }
+        }
+      },
+      "aggregated_chunks": {
+        "total_files": 30,
+        "files_with_content": 30,
+        "total_size": 2757856,
+        "average_size": 91928.53333333334
+      },
+      "overall_stats": {
+        "total_papers": 30,
+        "papers_with_content": 30,
+        "total_content_size": 2623582,
+        "average_content_size": 87452.73333333334,
+        "content_coverage_rate": 1.0
+      }
+    },
+    "naming_consistency": {
+      "categories": {
+        "MP": {
+          "expected_prefix": "MP",
+          "compliant_names": [
+            "MP_2021_LoRA_20251124",
+            "MP_2017_MoE_20251124",
+            "MP_2012_AlexNet_20251124",
+            "MP_2014_Seq2Seq_20251124",
+            "MP_2017_Transformer_20251124",
+            "MP_2015_ResNet_20251124",
+            "MP_2022_ReAct_20251124",
+            "MP_2015_Knowledge_Distillation_20251124",
+            "MP_2022_Chain_of_Thought_20251124"
+          ],
+          "non_compliant_names": []
+        },
+        "IF": {
+          "expected_prefix": "IF",
+          "compliant_names": [
+            "IF_2024_MegaScale_20251124",
+            "IF_2019_ZeRO_20251124",
+            "IF_2020_Scaling_Laws_20251124",
+            "IF_2022_LAION_5B_20251124",
+            "IF_2023_RefinedWeb_20251124"
+          ],
+          "non_compliant_names": []
+        },
+        "LM": {
+          "expected_prefix": "LM",
+          "compliant_names": [
+            "LM_2018_BERT_20251124",
+            "LM_2022_InstructGPT_20251124",
+            "LM_2013_Word2Vec_20251124",
+            "LM_2016_Google_NMT_20251124",
+            "LM_2019_GPT_2_20251124",
+            "LM_2020_GPT_3_20251124",
+            "LM_2024_TULU_3_20251124",
+            "LM_2018_GPT_1_20251124"
+          ],
+          "non_compliant_names": []
+        },
+        "MM": {
+          "expected_prefix": "MM",
+          "compliant_names": [
+            "MM_2020_ViT_20251124",
+            "MM_2014_Two_Stream_CNN_20251124",
+            "MM_2022_Stable_Diffusion_20251124",
+            "MM_2021_CLIP_20251124",
+            "MM_2015_GAN_20251124",
+            "MM_2020_DDPM_20251124",
+            "MM_2022_DiT_20251124",
+            "MM_2014_DeepVideo_20251124"
+          ],
+          "non_compliant_names": []
+        }
+      },
+      "aggregated_chunks": {
+        "compliant_names": [
+          "MM_2020_DDPM_20251124",
+          "LM_2016_Google_NMT_20251124",
+          "MP_2017_Transformer_20251124",
+          "MM_2022_DiT_20251124",
+          "MP_2022_ReAct_20251124",
+          "IF_2020_Scaling_Laws_20251124",
+          "LM_2022_InstructGPT_20251124",
+          "MP_2022_Chain_of_Thought_20251124",
+          "MM_2020_ViT_20251124",
+          "LM_2013_Word2Vec_20251124",
+          "MM_2022_Stable_Diffusion_20251124",
+          "MM_2015_GAN_20251124",
+          "MP_2017_MoE_20251124",
+          "LM_2018_GPT_1_20251124",
+          "LM_2024_TULU_3_20251124",
+          "IF_2023_RefinedWeb_20251124",
+          "LM_2018_BERT_20251124",
+          "MP_2012_AlexNet_20251124",
+          "MM_2014_Two_Stream_CNN_20251124",
+          "MP_2015_ResNet_20251124",
+          "LM_2019_GPT_2_20251124",
+          "MP_2021_LoRA_20251124",
+          "IF_2022_LAION_5B_20251124",
+          "MM_2014_DeepVideo_20251124",
+          "MP_2014_Seq2Seq_20251124",
+          "IF_2019_ZeRO_20251124",
+          "LM_2020_GPT_3_20251124",
+          "MP_2015_Knowledge_Distillation_20251124",
+          "MM_2021_CLIP_20251124",
+          "IF_2024_MegaScale_20251124"
+        ],
+        "non_compliant_names": []
+      },
+      "naming_violations": []
+    },
+    "index_files": {
+      "indices_dir_exists": true,
+      "required_files": {
+        "master_index.json": {
+          "exists": true,
+          "size": 78375
+        },
+        "category_index.json": {
+          "exists": true,
+          "size": 8010
+        },
+        "search_index.json": {
+          "exists": true,
+          "size": 17430
+        },
+        "statistics.json": {
+          "exists": true,
+          "size": 9838
+        }
+      },
+      "optional_files": {
+        "README.md": {
+          "exists": true,
+          "size": 1510
+        }
+      }
+    }
+  },
+  "summary": {
+    "overall_status": "PASS",
+    "total_issues": 0,
+    "critical_issues": 0,
+    "warnings": 0,
+    "architecture_version": "2.0",
+    "issues": []
+  }
+}

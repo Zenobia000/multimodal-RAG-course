@@ -1,0 +1,15 @@
+{
+  "output_name": "MP_2022_Chain_of_Thought_20251124",
+  "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/01_model_paradigm/2022_Chain_of_Thought.pdf",
+  "category_code": "MP",
+  "processing_time": "2025-11-24T20:10:16.707627",
+  "paper_info": {
+    "year": "2022",
+    "name": "Chain_of_Thought",
+    "original_filename": "2022_Chain_of_Thought"
+  },
+  "output_locations": {
+    "processed_paper_dir": "outputs/processed_papers/MP/MP_2022_Chain_of_Thought_20251124",
+    "aggregated_chunk_path": "outputs/aggregated_chunks/MP_2022_Chain_of_Thought_20251124.jsonl"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "summary": {
+    "total_files": 1,
+    "successful": 0,
+    "failed": 1,
+    "processing_time": "0:00:19.566557",
+    "category": "MP",
+    "input_source": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/01_model_paradigm/2017_AlphaGo_Zero.pdf",
+    "output_dir": "."
+  },
+  "results": [
+    {
+      "status": "error",
+      "pdf_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/01_model_paradigm/2017_AlphaGo_Zero.pdf",
+      "output_name": "MP_2017_AlphaGo_Zero_20251125",
+      "error": "未找到 results 目錄，OLMoCR 處理失敗: outputs/temp/MP_2017_AlphaGo_Zero_20251125/workspace/results"
+    }
+  ],
+  "timestamp": "2025-11-25T11:38:23.224434"
+}

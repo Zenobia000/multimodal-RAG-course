@@ -1,0 +1,15 @@
+{
+  "output_name": "LM_2013_Word2Vec_20251124",
+  "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/03_language_models/2013_Word2Vec.pdf",
+  "category_code": "LM",
+  "processing_time": "2025-11-24T22:43:36.061315",
+  "paper_info": {
+    "year": "2013",
+    "name": "Word2Vec",
+    "original_filename": "2013_Word2Vec"
+  },
+  "output_locations": {
+    "processed_paper_dir": "outputs/processed_papers/LM/LM_2013_Word2Vec_20251124",
+    "aggregated_chunk_path": "outputs/aggregated_chunks/LM_2013_Word2Vec_20251124.jsonl"
+  }
+}
