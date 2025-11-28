@@ -2,6 +2,19 @@
 
 本專案旨在演示如何將一個單體式的RAG原型，重構成為一個結構清晰、易於維護和擴展的模組化微服務應用。這次重構的核心是**關注點分離 (Separation of Concerns)**，這是現代軟體工程中的一個關鍵原則，特別適合教學和團隊協作。
 
+## ⚡ 重要更新
+
+**此專案現在直接引用 `04-embedding-application/` 中的 embedding 功能，避免重複實現：**
+
+- 移除了不必要的 `olmocr_integration.py` 文件
+- 移除了 `qdrant_storage` 目錄 (建議使用外部 Qdrant 服務)
+- `rag_service.py` 現在智能引用 `04-embedding-application/` 中的 embedding pipeline
+- 優先使用已有的 embedding 功能，回退到基本功能
+
+**建議工作流程：**
+1. 先在 `04-embedding-application/` 中建立和測試 embedding 索引
+2. 再啟動此專案的 API 服務來提供生產級接口
+
 ## 專案架構
 
 我們將原有的單一`04_api_server.py`文件拆分為以下結構：

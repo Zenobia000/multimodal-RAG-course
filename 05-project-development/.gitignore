@@ -1,0 +1,16 @@
+# Qdrant storage directory (owned by root, should use external service)
+qdrant_storage/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log

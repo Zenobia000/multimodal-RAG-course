@@ -1,13 +1,12 @@
 import os
+import sys
 import logging
 from pathlib import Path
 from typing import Dict, List
 from datetime import datetime
 
 from langchain_core.documents import Document
-from unstructured.partition.auto import partition
-from langchain_text_splitters import MarkdownTextSplitter
-from langchain_openai import OpenAIEmbeddings, ChatOpenAI
+from langchain_openai import ChatOpenAI
 from langchain_qdrant import Qdrant
 from qdrant_client import QdrantClient, models
 from langchain_core.prompts import ChatPromptTemplate
@@ -16,6 +15,17 @@ from langchain_core.output_parsers import StrOutputParser
 
 # 從同級目錄導入
 from config import Settings
+
+# 導入已有的 embedding 管道功能
+embedding_app_path = Path(__file__).parent.parent.parent / "04-embedding-application"
+if str(embedding_app_path) not in sys.path:
+    sys.path.append(str(embedding_app_path))
+
+try:
+    from embedding_pipeline import EmbeddingPipeline
+except ImportError as e:
+    logging.warning(f"無法導入 embedding_pipeline: {e}")
+    EmbeddingPipeline = None
 
 # 設定日誌
 logging.basicConfig(level=logging.INFO)
@@ -45,39 +55,63 @@ class RAGService:
         self.settings = settings
         self.vector_store = None
         self.qa_chain = None
+        self.embedding_pipeline = None
 
-        # 初始化組件
-        self.embeddings = OpenAIEmbeddings(model=self.settings.EMBEDDING_MODEL)
+        # 初始化 LLM
         self.llm = ChatOpenAI(
             model_name=self.settings.LLM_MODEL_NAME,
             temperature=self.settings.LLM_TEMPERATURE
         )
-        self.text_splitter = MarkdownTextSplitter(
-            chunk_size=self.settings.CHUNK_SIZE,
-            chunk_overlap=self.settings.CHUNK_OVERLAP
-        )
-        
+
+        # 初始化 Qdrant 客戶端
         self.qdrant_client = QdrantClient(url=self.settings.QDRANT_URL)
+
+        # 初始化 embedding pipeline (如果可用)
+        if EmbeddingPipeline:
+            try:
+                # 從 04-embedding-application 載入配置
+                embedding_config_path = Path(__file__).parent.parent.parent / "04-embedding-application" / "config.py"
+                if embedding_config_path.exists():
+                    self.embedding_pipeline = EmbeddingPipeline()
+                    logger.info("✅ 成功載入 embedding pipeline")
+                else:
+                    logger.warning("⚠️ embedding pipeline 配置文件未找到")
+            except Exception as e:
+                logger.warning(f"⚠️ 初始化 embedding pipeline 失敗: {e}")
+        else:
+            logger.warning("⚠️ EmbeddingPipeline 類不可用，將使用基礎功能")
 
     async def init_rag(self) -> bool:
         """
         初始化RAG系統：載入文檔、建立向量索引和QA鏈。
         如果索引已存在，則直接載入。
+        優先使用 04-embedding-application 的功能。
         """
         try:
             collection_exists = self.qdrant_client.collection_exists(self.settings.QDRANT_COLLECTION_NAME)
-            
+
             if collection_exists:
                 logger.info(f"從 Qdrant 載入現有集合: {self.settings.QDRANT_COLLECTION_NAME}")
+
+                # 如果有 embedding pipeline，使用它的 embeddings
+                if self.embedding_pipeline and hasattr(self.embedding_pipeline, 'embeddings'):
+                    embeddings = self.embedding_pipeline.embeddings
+                    logger.info("✅ 使用 embedding pipeline 的 embeddings")
+                else:
+                    # 回退到基本的 OpenAI embeddings
+                    from langchain_openai import OpenAIEmbeddings
+                    embeddings = OpenAIEmbeddings(model=self.settings.EMBEDDING_MODEL)
+                    logger.info("⚠️ 使用基本的 OpenAI embeddings")
+
                 self.vector_store = Qdrant(
                     client=self.qdrant_client,
                     collection_name=self.settings.QDRANT_COLLECTION_NAME,
-                    embeddings=self.embeddings,
+                    embeddings=embeddings,
                 )
                 logger.info("✅ 索引成功載入")
             else:
-                logger.info("找不到現有索引，開始建立新的索引...")
-                await self._build_index()
+                logger.info("找不到現有索引，建議使用 04-embedding-application 建立索引")
+                return False
 
             # 創建QA鏈
             template = """你是一個問答助手。根據以下檢索到的文檔內容來回答問題。
@@ -109,71 +143,44 @@ Answer:"""
             logger.error(f"RAG服務初始化失敗: {e}", exc_info=True)
             return False
 
-    async def _build_index(self):
+    def use_embedding_pipeline_search(self, question: str, top_k: int = 3) -> Dict:
         """
-        私有方法：從PDF文檔建立新的向量索引。
+        使用 embedding pipeline 的搜索功能 (如果可用)
         """
-        papers_dir = Path(self.settings.PAPERS_PATH)
-        if not papers_dir.exists() or not papers_dir.is_dir():
-            logger.error(f"指定的文檔路徑不存在: {papers_dir}")
-            raise FileNotFoundError(f"指定的文檔路徑不存在: {papers_dir}")
+        if not self.embedding_pipeline:
+            raise RuntimeError("Embedding pipeline 不可用")
 
-        pdf_files = list(papers_dir.rglob('*.pdf'))
-        if not pdf_files:
-            logger.warning(f"在 '{papers_dir}' 中沒有找到PDF文件")
-            return
-
-        documents_to_index = []
-        for pdf_file in pdf_files:
-            try:
-                logger.info(f"正在處理: {pdf_file.name}")
-                elements = partition(filename=str(pdf_file), strategy="hi_res")
-                markdown_content = elements_to_markdown(elements)
-                
-                # 將整個 Markdown 內容分割
-                chunks = self.text_splitter.split_text(markdown_content)
-                
-                for chunk in chunks:
-                    doc = Document(
-                        page_content=chunk,
-                        metadata={
-                            "source": str(pdf_file.relative_to(papers_dir.parent)),
-                            "file_name": pdf_file.name,
-                            "category": pdf_file.parent.name,
-                        }
-                    )
-                    documents_to_index.append(doc)
-                
-                logger.info(f"成功處理: {pdf_file.name}，產生 {len(chunks)} 個文本塊")
-                
-            except Exception as e:
-                logger.error(f"處理 '{pdf_file}' 失敗: {e}")
-                continue
-
-        if not documents_to_index:
-            logger.warning("沒有成功處理任何文檔，索引未建立")
-            return
-
-        logger.info(f"共分割出 {len(documents_to_index)} 個文本塊，準備寫入 Qdrant")
-
-        # 創建並持久化向量存儲
-        self.vector_store = await Qdrant.afrom_documents(
-            documents_to_index,
-            embedding=self.embeddings,
-            url=self.settings.QDRANT_URL,
-            collection_name=self.settings.QDRANT_COLLECTION_NAME,
-            force_recreate=True,  # 確保創建新集合
-        )
-        logger.info(f"✅ 向量索引建立完成並保存至 Qdrant 集合 '{self.settings.QDRANT_COLLECTION_NAME}'")
+        try:
+            # 使用 embedding pipeline 的搜索功能
+            # 假設 embedding pipeline 有類似的搜索方法
+            if hasattr(self.embedding_pipeline, 'search_documents'):
+                results = self.embedding_pipeline.search_documents(question, top_k=top_k)
+                return results
+            else:
+                logger.warning("Embedding pipeline 沒有 search_documents 方法，回退到基本搜索")
+                return None
+        except Exception as e:
+            logger.error(f"使用 embedding pipeline 搜索失敗: {e}")
+            return None
 
     def query(self, question: str, top_k: int = 3) -> Dict:
         """
         執行RAG查詢。
+        優先嘗試使用 embedding pipeline 功能，回退到基本 RAG 功能。
         """
+        # 嘗試使用 embedding pipeline
+        if self.embedding_pipeline:
+            pipeline_result = self.use_embedding_pipeline_search(question, top_k)
+            if pipeline_result:
+                logger.info("✅ 使用 embedding pipeline 搜索結果")
+                return pipeline_result
+
+        # 回退到基本 RAG 功能
         if not self.qa_chain:
-            raise RuntimeError("RAG系統未初始化，無法執行查詢。" )
+            raise RuntimeError("RAG系統未初始化，無法執行查詢。")
 
         try:
+            logger.info("⚠️ 使用基本 RAG 搜索")
             # 更新檢索的 top_k 參數
             self.retriever.search_kwargs = {"k": top_k}
 
