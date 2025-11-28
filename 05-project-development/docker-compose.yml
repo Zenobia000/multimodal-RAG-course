@@ -27,5 +27,5 @@ services:
     ports:
       - "6333:6333"
       - "6334:6334"
-    volumes:
-      - ./qdrant_storage:/qdrant/storage
+    # Note: Using temporary storage - data will be lost when container stops
+    # For production, use external Qdrant service or configure persistent volumes

@@ -7,13 +7,18 @@
 **此專案現在直接引用 `04-embedding-application/` 中的 embedding 功能，避免重複實現：**
 
 - 移除了不必要的 `olmocr_integration.py` 文件
-- 移除了 `qdrant_storage` 目錄 (建議使用外部 Qdrant 服務)
+- 移除了 `qdrant_storage` 本地持久化存儲 (現使用臨時存儲)
 - `rag_service.py` 現在智能引用 `04-embedding-application/` 中的 embedding pipeline
 - 優先使用已有的 embedding 功能，回退到基本功能
+- **注意**: Qdrant 現在使用臨時存儲，容器重啟後數據會丟失
 
 **建議工作流程：**
 1. 先在 `04-embedding-application/` 中建立和測試 embedding 索引
 2. 再啟動此專案的 API 服務來提供生產級接口
+
+**生產環境建議：**
+- 使用外部 Qdrant 服務 (如 Qdrant Cloud) 而非本地容器
+- 如需本地持久化，請在 docker-compose.yml 中添加適當的 volumes 配置
 
 ## 專案架構
 
