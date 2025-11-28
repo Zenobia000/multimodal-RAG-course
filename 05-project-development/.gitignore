@@ -1,5 +1,5 @@
-# Qdrant storage directory (owned by root, should use external service)
-qdrant_storage/
+# Qdrant storage directory (may be owned by root)
+# qdrant_storage/
 
 # Python
 __pycache__/
