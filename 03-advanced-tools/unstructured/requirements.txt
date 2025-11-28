@@ -1,0 +1,8 @@
+# Unstructured PDF處理工具依賴
+# 注意：NumPy 2.x 與 unstructured 的依賴 (onnxruntime) 不兼容
+# 必須使用 NumPy < 2.0
+
+numpy<2.0
+unstructured
+unstructured[pdf]
+

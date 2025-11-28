@@ -1,0 +1,44 @@
+{
+  "summary": {
+    "total_files": 5,
+    "successful": 5,
+    "failed": 0,
+    "processing_time": "0:52:24.058982",
+    "category": "IF",
+    "input_dir": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/02_infrastructure",
+    "output_dir": "."
+  },
+  "results": [
+    {
+      "status": "success",
+      "pdf_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/02_infrastructure/2022_LAION_5B.pdf",
+      "output_name": "IF_2022_LAION_5B_20251124",
+      "timestamp": "2025-11-24T19:07:09.308093"
+    },
+    {
+      "status": "success",
+      "pdf_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/02_infrastructure/2023_RefinedWeb.pdf",
+      "output_name": "IF_2023_RefinedWeb_20251124",
+      "timestamp": "2025-11-24T19:19:00.344482"
+    },
+    {
+      "status": "success",
+      "pdf_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/02_infrastructure/2020_Scaling_Laws.pdf",
+      "output_name": "IF_2020_Scaling_Laws_20251124",
+      "timestamp": "2025-11-24T19:23:33.194671"
+    },
+    {
+      "status": "success",
+      "pdf_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/02_infrastructure/2019_ZeRO.pdf",
+      "output_name": "IF_2019_ZeRO_20251124",
+      "timestamp": "2025-11-24T19:35:40.529408"
+    },
+    {
+      "status": "success",
+      "pdf_path": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/02_infrastructure/2024_MegaScale.pdf",
+      "output_name": "IF_2024_MegaScale_20251124",
+      "timestamp": "2025-11-24T19:45:48.160063"
+    }
+  ],
+  "timestamp": "2025-11-24T19:45:48.160453"
+}

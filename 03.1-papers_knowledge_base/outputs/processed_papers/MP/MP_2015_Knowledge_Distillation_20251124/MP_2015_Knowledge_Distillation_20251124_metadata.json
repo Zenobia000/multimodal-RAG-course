@@ -1,0 +1,15 @@
+{
+  "output_name": "MP_2015_Knowledge_Distillation_20251124",
+  "original_pdf": "/home/os-sunnie.gd.weng/python_workstation/side-project/RAG/RAG_full_tech_overview/papers/01_model_paradigm/2015_Knowledge_Distillation.pdf",
+  "category_code": "MP",
+  "processing_time": "2025-11-24T20:53:27.889756",
+  "paper_info": {
+    "year": "2015",
+    "name": "Knowledge_Distillation",
+    "original_filename": "2015_Knowledge_Distillation"
+  },
+  "output_locations": {
+    "processed_paper_dir": "outputs/processed_papers/MP/MP_2015_Knowledge_Distillation_20251124",
+    "aggregated_chunk_path": "outputs/aggregated_chunks/MP_2015_Knowledge_Distillation_20251124.jsonl"
+  }
+}
