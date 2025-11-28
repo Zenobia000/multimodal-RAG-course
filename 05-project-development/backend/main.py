@@ -104,7 +104,7 @@ async def chat_completions(
     """
     模擬OpenAI的 `chat completions` API。
     """
-    if not rag_service.qa_chain:
+    if not rag_service.prompt:
         raise HTTPException(status_code=503, detail="RAG服務正在初始化，請稍後再試。 সন")
         
     last_user_message = next((msg.content for msg in reversed(request.messages) if msg.role == 'user'), None)
@@ -143,7 +143,7 @@ async def chat_completions(
 # --- 原有端點 ---
 @app.get("/health", response_model=HealthCheckResponse, summary="健康檢查")
 async def health_check(rag_service: RAGService = Depends(get_rag_service)):
-    is_rag_ready = rag_service.qa_chain is not None
+    is_rag_ready = rag_service.prompt is not None
     service_status = "healthy" if is_rag_ready else "degraded"
     
     return HealthCheckResponse(
@@ -159,7 +159,7 @@ async def query_documents(
     request: QueryRequest,
     rag_service: RAGService = Depends(get_rag_service)
 ):
-    if not rag_service.qa_chain:
+    if not rag_service.prompt:
         raise HTTPException(status_code=503, detail="RAG服務正在初始化，請稍後再試。 সন")
     try:
         result = rag_service.query(request.question, request.top_k)

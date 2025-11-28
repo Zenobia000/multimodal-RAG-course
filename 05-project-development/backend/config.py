@@ -27,7 +27,7 @@ class Settings(BaseSettings):
 
     # Qdrant
     QDRANT_URL: str = "http://qdrant:6333"
-    QDRANT_COLLECTION_NAME: str = "rag_collection"
+    QDRANT_COLLECTION_NAME: str = "olmocr_documents"
 
     # API 服務
     API_HOST: str = "0.0.0.0"
