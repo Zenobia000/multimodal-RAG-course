@@ -1,16 +1,8 @@
-# Qdrant storage directory (may be owned by root)
-# qdrant_storage/
-
-# Python
+ollama_data/
+qdrant_storage/
+open-webui/
+*.log
 __pycache__/
 *.pyc
-*.pyo
-*.egg-info/
 .env
-
-# IDE
-.vscode/
-.idea/
-
-# Logs
-*.log
+.DS_Store

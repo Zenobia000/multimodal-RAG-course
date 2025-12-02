@@ -69,5 +69,5 @@ class ChatCompletionChunk(BaseModel):
     id: str = Field(default_factory=lambda: f"chatcmpl-{time.time()}")
     object: str = "chat.completion.chunk"
     created: int = Field(default_factory=lambda: int(time.time()))
-    model: str
+    model: str = "gpt-3.5-turbo"
     choices: List[ChatCompletionChunkChoice]

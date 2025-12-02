@@ -8,15 +8,20 @@ class Settings(BaseSettings):
     """
     應用程式設定
     """
-    # OpenAI API Key
+    # API Keys for multiple providers
     OPENAI_API_KEY: str = os.getenv("OPENAI_API_KEY", "")
+    ANTHROPIC_API_KEY: str = os.getenv("ANTHROPIC_API_KEY", "")
+    GOOGLE_API_KEY: str = os.getenv("GOOGLE_API_KEY", "")
+    
+    # Ollama (local models)
+    OLLAMA_BASE_URL: str = os.getenv("OLLAMA_BASE_URL", "http://ollama:11434")
 
-    # LLM 模型
-    LLM_MODEL_NAME: str = "gpt-3.5-turbo"
+    # Default LLM 模型 (用於向後兼容)
+    LLM_MODEL_NAME: str = "gpt-4o-mini"
     LLM_TEMPERATURE: float = 0.0
 
-    # Embedding 模型
-    EMBEDDING_MODEL: str = "text-embedding-ada-002"
+    # Embedding 模型 (用於 RAG)
+    EMBEDDING_MODEL: str = "text-embedding-3-small"
 
     # 文檔路徑
     PAPERS_PATH: str = "/app/papers"

@@ -1,16 +1,18 @@
 import os
 import logging
-from typing import Dict, List
+from typing import Dict, List, Optional
 from datetime import datetime
 
 from langchain_core.documents import Document
-from langchain_openai import OpenAIEmbeddings, ChatOpenAI
+from langchain_openai import OpenAIEmbeddings
 from qdrant_client import QdrantClient
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
+from langchain_core.messages import HumanMessage
 
 # 從同級目錄導入
 from config import Settings
+from model_manager import model_manager
 
 # 設定日誌
 logging.basicConfig(level=logging.INFO)
@@ -40,13 +42,20 @@ class RAGService:
         self.settings = settings
         self.qa_chain = None
         self.retriever = None
+        self.model_manager = model_manager
 
         # 初始化核心組件
         self.embeddings = OpenAIEmbeddings(model=self.settings.EMBEDDING_MODEL)
-        self.llm = ChatOpenAI(
-            model_name=self.settings.LLM_MODEL_NAME,
-            temperature=self.settings.LLM_TEMPERATURE
-        )
+        # 預設 LLM (用於向後兼容)
+        self.default_llm = None
+        try:
+            self.default_llm = model_manager.create_llm(
+                self.settings.LLM_MODEL_NAME,
+                self.settings.LLM_TEMPERATURE
+            )
+        except Exception as e:
+            logger.warning(f"⚠️ 無法創建預設 LLM: {e}")
+        
         self.qdrant_client = QdrantClient(url=self.settings.QDRANT_URL)
 
         logger.info("✅ RAG 服務核心組件初始化完成")
@@ -92,14 +101,22 @@ Answer:"""
             logger.error(f"RAG服務初始化失敗: {e}", exc_info=True)
             return False
 
-    def query(self, question: str, top_k: int = 3) -> Dict:
+    def query(self, question: str, model_id: Optional[str] = None, top_k: int = 3) -> Dict:
         """
         執行RAG查詢：將查詢向量化，在 Qdrant 中搜索，用 LLM 生成回答。
+        
+        Args:
+            question: 用戶問題
+            model_id: 指定使用的模型 ID，如果為 None 則使用預設模型
+            top_k: 檢索的文檔數量
         """
         if not self.prompt:
             raise RuntimeError("RAG系統未初始化，無法執行查詢。")
 
         try:
+            # 獲取 LLM 實例
+            llm = self._get_llm(model_id)
+            
             # 1. 將查詢轉換為向量
             query_vector = self.embeddings.embed_query(question)
             logger.info(f"✅ 查詢向量化完成，維度: {len(query_vector)}")
@@ -132,16 +149,73 @@ Answer:"""
 
             # 4. 用 LLM 生成回答
             messages = self.prompt.format_messages(context=context, question=question)
-            answer = self.llm.invoke(messages).content
+            answer = llm.invoke(messages).content
 
-            logger.info("✅ RAG 查詢完成")
+            logger.info(f"✅ RAG 查詢完成 (model: {model_id or 'default'})")
             return {
                 "question": question,
                 "answer": answer,
                 "sources": sources,
+                "model": model_id or self.settings.LLM_MODEL_NAME,
                 "timestamp": datetime.now().isoformat()
             }
 
         except Exception as e:
             logger.error(f"執行查詢時出錯: {e}", exc_info=True)
             raise RuntimeError(f"查詢失敗: {str(e)}")
+    
+    def chat(self, question: str, model_id: Optional[str] = None) -> Dict:
+        """
+        純 LLM 對話：不使用 RAG 檢索，直接用 LLM 回答。
+        適用於一般性問題、閒聊等不需要文檔知識的場景。
+        
+        Args:
+            question: 用戶問題
+            model_id: 指定使用的模型 ID，如果為 None 則使用預設模型
+        """
+        try:
+            # 獲取 LLM 實例
+            llm = self._get_llm(model_id)
+            
+            # 直接用 LLM 回答，不檢索文檔
+            message = HumanMessage(content=question)
+            answer = llm.invoke([message]).content
+            
+            logger.info(f"✅ 純 LLM 對話完成 (model: {model_id or 'default'})")
+            return {
+                "question": question,
+                "answer": answer,
+                "sources": [],  # 純對話模式沒有來源文檔
+                "model": model_id or self.settings.LLM_MODEL_NAME,
+                "timestamp": datetime.now().isoformat()
+            }
+        
+        except Exception as e:
+            logger.error(f"執行對話時出錯: {e}", exc_info=True)
+            raise RuntimeError(f"對話失敗: {str(e)}")
+    
+    def _get_llm(self, model_id: Optional[str] = None):
+        """
+        獲取 LLM 實例
+        
+        Args:
+            model_id: 模型 ID，如果為 None 則使用預設模型
+        
+        Returns:
+            LLM 實例
+        """
+        if model_id is None:
+            if self.default_llm is None:
+                raise RuntimeError("預設 LLM 未初始化")
+            return self.default_llm
+        
+        # 動態創建 LLM
+        try:
+            return self.model_manager.create_llm(model_id, self.settings.LLM_TEMPERATURE)
+        except Exception as e:
+            logger.error(f"創建 LLM 失敗 ({model_id}): {e}")
+            # 回退到預設 LLM
+            logger.warning(f"回退到預設 LLM")
+            if self.default_llm is None:
+                raise RuntimeError("預設 LLM 未初始化且無法創建指定模型")
+            return self.default_llm

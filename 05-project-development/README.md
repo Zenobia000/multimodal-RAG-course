@@ -1,120 +1,298 @@
-# 專案四：生產級RAG系統開發實戰 (重構版)
+# RAG 系統開發實戰
 
-本專案旨在演示如何將一個單體式的RAG原型，重構成為一個結構清晰、易於維護和擴展的模組化微服務應用。這次重構的核心是**關注點分離 (Separation of Concerns)**，這是現代軟體工程中的一個關鍵原則，特別適合教學和團隊協作。
+生產級 RAG (Retrieval-Augmented Generation) 系統，支持多模型、多知識庫、本地模型。
 
-## ⚡ 重要更新
+## 🚀 5 分鐘快速開始
 
-**此專案現在直接引用 `04-embedding-application/` 中的 embedding 功能，避免重複實現：**
+### 1. 設置 API Key
 
-- 移除了不必要的 `olmocr_integration.py` 文件
-- 保留 `qdrant_storage` 目錄用於持久化存儲向量數據
-- `rag_service.py` 現在智能引用 `04-embedding-application/` 中的 embedding pipeline
-- 優先使用已有的 embedding 功能，回退到基本功能
-- **注意**: Qdrant 使用本地持久化存儲，向量數據會在容器重啟後保留
-
-**建議工作流程：**
-1. 先在 `04-embedding-application/` 中建立和測試 embedding 索引
-2. 再啟動此專案的 API 服務來提供生產級接口
-
-**存儲說明：**
-- 使用 `./qdrant_storage` 目錄進行本地持久化存儲
-- 向量數據會在容器重啟後保留
-- 生產環境建議使用外部 Qdrant 服務 (如 Qdrant Cloud)
-
-## 專案架構
-
-我們將原有的單一`04_api_server.py`文件拆分為以下結構：
-
-```
-04-project-development/
-├── backend/
-│   ├── Dockerfile
-│   ├── main.py         # FastAPI 應用主入口、API端點
-│   ├── rag_service.py  # RAG核心業務邏輯
-│   ├── config.py       # Pydantic 應用配置
-│   └── schemas.py      # API數據模型 (請求/響應)
-│
-├── docker-compose.yml  # 微服務編排文件
-└── README.md           # 就是你正在閱讀的這份文件
-```
-
-### 架構優勢
-
-1.  **關注點分離**:
-    *   `backend`: 專注於核心的RAG功能、數據處理和API提供。
-    *   `open-webui`: 作為一個獨立、功能豐富的前端服務。
-    *   `qdrant`: 作為獨立的向量數據庫服務。
-    *   `docker-compose.yml`: 專注於服務的部署、網絡和數據卷管理。
-
-2.  **可擴展性**:
-    *   前後端可以獨立擴展。例如，您可以運行多個`backend`實例來處理高併發請求。
-    *   可以輕易地替換或添加新的服務。
-
-3.  **可維護性**:
-    *   每個模組職責單一，代碼更易於理解、調試和修改。
-
-4.  **貼近生產環境**:
-    *   使用`docker-compose`進行容器化編排是現代雲原生應用的標準實踐。
-    *   通過環境變數進行配置 (`.env`)，而不是硬編碼，增強了安全性及不同環境部署的靈活性。
-
-## 如何運行
-
-在開始之前，請確保您已安裝 Docker 和 Docker Compose。
-
-### 步驟 1: 環境配置
-
-1.  在專案根目錄 (`multimodel-RAG/`) 下創建一個 `.env` 文件。
-2.  在 `.env` 文件中，填寫您的 `OPENAI_API_KEY`。這是RAG系統運作的必要條件。
-
-    ```
-    OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-    ```
-
-### 步驟 2: 使用 Docker Compose 啟動服務
-
-1.  打開終端，進入當前目錄 (`04-project-development/`)。
-2.  運行以下命令來構建並啟動所有服務：
-
-    ```bash
-    docker compose up --build -d
-    ```
-    *   `--build`: 強制重新構建鏡像，確保應用最新的代碼改動。
-    *   `-d`: 在後台運行服務。
-
-3.  等待所有服務啟動。您可以通過以下命令查看後端服務的日誌：
-
-    ```bash
-    docker compose logs -f backend
-    ```
-    第一次啟動時，後端會需要一些時間來處理文檔並建立索引。當您看到類似 `RAG服務已成功初始化` 的日誌時，表示後端已準備就緒。
-
-### 步驟 3: 訪問與設定應用
-
-在以下步驟中，請將 `<your_server_ip>` 替換為您 Docker 主機的實際 IP 地址 (例如：`127.0.0.1` 或 `0.0.0.0`)。
-
-1.  **訪問 Open-WebUI**:
-    打開瀏覽器，訪問 `http://<your_server_ip>:8081`。首次進入需要註冊一個管理員帳號。
-
-2.  **設定模型**:
-    *   登入 `Open-WebUI` 後，點擊右上角的頭像，選擇 "Settings"。
-    *   在 "Connections" -> "OpenAI" 中，你應該會看到已經預設連接好的後端服務 (`http://backend:8000/v1`)。請注意，`http://backend:8000/v1` 是 `Open-WebUI` 容器內部訪問 `backend` 服務的地址。
-    *   回到主頁面，在模型選擇下拉列表中，選擇 `gpt-3.5-turbo` (或其他你在 `config.py` 中設定的模型)。
-
-3.  **開始對話**:
-    現在您可以開始與您的RAG系統進行對話了！
-
-*   **Qdrant Web UI**:
-    打開瀏覽器，訪問 `http://<your_server_ip>:6333/dashboard`
-    您可以在這裡查看向量數據庫的集合和數據點。
-
-*   **後端API文檔 (Swagger UI)**:
-    打開瀏覽器，訪問 `http://<your_server_ip>:8000/docs`
-
-### 如何停止
-
-當您想停止所有服務時，運行：
+在**專案根目錄**創建 `.env`：
 
 ```bash
-docker compose down
+OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxx
 ```
-這會停止並移除所有相關的容器和網絡。如果您想同時刪除數據卷（例如Qdrant的索引），可以添加 `-v` 參數： `docker compose down -v`。
+
+### 2. 啟動服務
+
+```bash
+cd 05-project-development
+docker compose up -d
+```
+
+### 3. 訪問界面
+
+打開瀏覽器：**http://localhost:8081**
+
+### 4. 開始對話
+
+1. 註冊帳號（首次）
+2. 選擇模型（如 `gpt-4o-mini`）
+3. 開始對話！
+
+**就這麼簡單！** 🎉
+
+---
+
+## 📚 完整文檔
+
+### 用戶文檔
+
+- **[USER_GUIDE.md](USER_GUIDE.md)** ⭐ **所有用戶必讀**
+  - 如何使用 Models、Tools、Knowledge
+  - 實戰示例與最佳實踐
+  - 常見問題解答
+
+### 管理員文檔
+
+- **[ADMIN_GUIDE.md](ADMIN_GUIDE.md)** 🔧 **管理員必讀**
+  - 添加新模型
+  - 管理知識庫
+  - 故障排除
+  - 性能優化
+
+---
+
+## ⚡ 核心功能
+
+### 多模型支持
+
+- ✅ **OpenAI**: GPT-4.1, GPT-4o-mini, O3-mini 等
+- ✅ **Anthropic**: Claude Sonnet 4.5, Haiku 4.5 等
+- ✅ **Google**: Gemini 2.5 Pro, Flash 等
+- ✅ **Ollama**: 免費本地模型（Llama, Qwen 等）
+
+### 雙 RAG 模式
+
+**模式 A：Knowledge 功能（臨時文檔）**
+```
+用途：個人上傳的 PDF/文檔
+操作：Knowledge → 上傳 → 用 # 引用
+```
+
+**模式 B：後端 RAG（專業知識庫）**
+```
+用途：預先索引的專業文檔（如論文庫）
+操作：選擇帶 -rag 後綴的模型
+```
+
+### 工具支持
+
+- ✅ **Web Search**: 實時信息查詢
+- ✅ **Code Interpreter**: 代碼執行
+- ✅ **Custom Tools**: 自定義功能
+
+---
+
+## 🎯 使用場景
+
+### 場景 1：日常對話
+
+```
+Model:  gpt-4o-mini
+Tools:  (不啟用)
+→ 快速對話、一般問題
+```
+
+### 場景 2：文檔問答
+
+```
+Model:  gpt-4o-mini-rag
+Knowledge: #my_docs
+→ 基於文檔回答
+```
+
+### 場景 3：實時信息
+
+```
+Model:  gpt-4o-mini
+Tools:  ✅ Web Search
+→ 搜索最新信息
+```
+
+### 場景 4：免費方案
+
+```
+Model:  llama3.2:3b（Ollama）
+→ 完全免費，本地運行
+```
+
+---
+
+## 🏗️ 系統架構
+
+```
+用戶 → Open WebUI → Backend → LLM APIs
+              ↓           ↓
+         ChromaDB     Qdrant    Ollama
+        (臨時文檔)  (專業知識庫) (本地模型)
+```
+
+### 服務組件
+
+| 服務 | 端口 | 說明 |
+|------|------|------|
+| **Open WebUI** | 8081 | 前端界面 |
+| **Backend** | 8000 | RAG API |
+| **Qdrant** | 6333 | 向量數據庫 |
+| **Ollama** | 11434 | 本地模型 |
+
+### 目錄結構
+
+```
+05-project-development/
+├── backend/
+│   ├── main.py              # API 端點
+│   ├── rag_service.py       # RAG 邏輯
+│   ├── model_manager.py     # 模型管理
+│   ├── models_config.json   # 模型配置
+│   └── config.py            # 設定
+│
+├── docker-compose.yml       # 服務編排
+├── README.md               # 本文件
+├── USER_GUIDE.md           # 用戶指南 ⭐
+└── ADMIN_GUIDE.md          # 管理員指南 🔧
+```
+
+---
+
+## 🔧 進階配置
+
+### 添加更多模型
+
+編輯 `.env` 添加 API Keys：
+
+```bash
+ANTHROPIC_API_KEY=sk-ant-xxx  # Claude 模型
+GOOGLE_API_KEY=xxx             # Gemini 模型
+```
+
+重啟服務：
+
+```bash
+docker compose restart backend
+```
+
+### 下載本地模型
+
+**在 UI 中：**
+```
+右上角頭像 → Settings → Models
+→ Pull a model from Ollama.com
+→ 輸入：llama3.2:3b
+```
+
+**命令行：**
+```bash
+docker exec 05-project-development-ollama-1 ollama pull llama3.2:3b
+```
+
+---
+
+## 📊 監控與維護
+
+### 查看日誌
+
+```bash
+# 所有服務
+docker compose logs -f
+
+# 特定服務
+docker compose logs -f backend
+```
+
+### 健康檢查
+
+```bash
+# Backend API
+curl http://localhost:8000/health
+
+# 可用模型
+curl http://localhost:8000/v1/models
+```
+
+### 備份數據
+
+```bash
+tar -czf backup-$(date +%Y%m%d).tar.gz \
+  ./open-webui/ \
+  ./qdrant_storage/ \
+  ./ollama_data/
+```
+
+---
+
+## 🆘 常見問題
+
+### Q: 看不到某些模型？
+
+**A:** 檢查 API Key 是否設置：
+
+```bash
+cat /path/to/.env | grep API_KEY
+docker compose restart backend
+```
+
+### Q: RAG 不工作？
+
+**A:** 檢查健康狀態：
+
+```bash
+curl http://localhost:8000/health
+# 應該看到 "rag_ready": true
+```
+
+### Q: 如何停止服務？
+
+**A:**
+
+```bash
+docker compose down     # 停止
+docker compose down -v  # 停止並刪除數據
+```
+
+---
+
+## 📖 完整文檔導航
+
+**我該看哪個文檔？**
+
+```
+👤 我是用戶 → USER_GUIDE.md
+  - 如何使用 Models、Tools、Knowledge
+  - 實戰示例與最佳實踐
+  
+🔧 我是管理員 → ADMIN_GUIDE.md
+  - 添加新模型
+  - 管理知識庫
+  - 故障排除
+  
+📋 我想快速了解 → 本 README
+  - 5 分鐘快速開始
+  - 系統概覽
+```
+
+---
+
+## 🎓 技術特點
+
+- ✅ **模組化設計**: 關注點分離，易於維護
+- ✅ **容器化部署**: Docker Compose 編排
+- ✅ **動態配置**: JSON 配置模型，無需改代碼
+- ✅ **自動重載**: 開發模式下代碼自動生效
+- ✅ **雙 RAG 架構**: 靈活應對不同場景
+- ✅ **多提供商支持**: OpenAI、Anthropic、Google、Ollama
+- ✅ **生產就緒**: 完整的監控、備份、故障排除
+
+---
+
+## 📝 License
+
+MIT License
+
+---
+
+**開始使用？** 👉 [USER_GUIDE.md](USER_GUIDE.md)
+
+**需要管理？** 👉 [ADMIN_GUIDE.md](ADMIN_GUIDE.md)
+
+**有問題？** 查看文檔或提交 Issue！
